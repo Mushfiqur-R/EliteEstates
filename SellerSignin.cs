@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace EliteEstates
 {
-    public partial class signin : Form
+    public partial class SellerSignin : Form
     {
-        public signin()
+        public SellerSignin()
         {
             InitializeComponent();
+        }
+
+        private void backbtnseller_Click(object sender, EventArgs e)
+        {
+            login back=new login();
+            back.Show();
+            this.Hide();
         }
     }
 }

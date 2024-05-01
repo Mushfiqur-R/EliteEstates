@@ -10,17 +10,17 @@ using System.Windows.Forms;
 
 namespace EliteEstates
 {
-    public partial class BuyerDashboard : Form
+    public partial class Buyersignin : Form
     {
-        public BuyerDashboard()
+        public Buyersignin()
         {
             InitializeComponent();
         }
 
-        private void sendcomplaintbtnbuyer_Click(object sender, EventArgs e)
+        private void backbtnbuyer_Click(object sender, EventArgs e)
         {
-            SendComplaint send=new SendComplaint(); 
-            send.Show();
+            login back=new login();
+            back.Show();
             this.Hide();
         }
     }

@@ -56,17 +56,47 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Add_Product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Product.Designer.cs">
+      <DependentUpon>Add_Product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adminsignin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adminsignin.Designer.cs">
+      <DependentUpon>Adminsignin.cs</DependentUpon>
+    </Compile>
     <Compile Include="BuyerDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="BuyerDashboard.Designer.cs">
       <DependentUpon>BuyerDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Buyersignin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Buyersignin.Designer.cs">
+      <DependentUpon>Buyersignin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Buyitem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Buyitem.Designer.cs">
+      <DependentUpon>Buyitem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Editinfo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Editinfo.Designer.cs">
       <DependentUpon>Editinfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frontpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontpage.Designer.cs">
+      <DependentUpon>Frontpage.cs</DependentUpon>
     </Compile>
     <Compile Include="login.cs">
       <SubType>Form</SubType>
@@ -93,17 +123,32 @@
     <Compile Include="SendComplaint.Designer.cs">
       <DependentUpon>SendComplaint.cs</DependentUpon>
     </Compile>
-    <Compile Include="signin.cs">
+    <Compile Include="SellerSignin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="signin.Designer.cs">
-      <DependentUpon>signin.cs</DependentUpon>
+    <Compile Include="SellerSignin.Designer.cs">
+      <DependentUpon>SellerSignin.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Add_Product.resx">
+      <DependentUpon>Add_Product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adminsignin.resx">
+      <DependentUpon>Adminsignin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BuyerDashboard.resx">
       <DependentUpon>BuyerDashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Buyersignin.resx">
+      <DependentUpon>Buyersignin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Buyitem.resx">
+      <DependentUpon>Buyitem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Editinfo.resx">
       <DependentUpon>Editinfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frontpage.resx">
+      <DependentUpon>Frontpage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
@@ -119,8 +164,8 @@
     <EmbeddedResource Include="SendComplaint.resx">
       <DependentUpon>SendComplaint.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="signin.resx">
-      <DependentUpon>signin.cs</DependentUpon>
+    <EmbeddedResource Include="SellerSignin.resx">
+      <DependentUpon>SellerSignin.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.manifest" />
     <None Include="Properties\Settings.settings">

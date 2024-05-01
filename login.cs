@@ -17,5 +17,12 @@ namespace EliteEstates
         {
             InitializeComponent();
         }
+
+        private void signinlink_Click(object sender, EventArgs e)
+        {
+            Frontpage go=new Frontpage();
+            go.Show();
+            this.Hide();
+        }
     }
 }

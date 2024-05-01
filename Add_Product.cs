@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace EliteEstates
 {
-    public partial class BuyerDashboard : Form
+    public partial class Add_Product : Form
     {
-        public BuyerDashboard()
+        public Add_Product()
         {
             InitializeComponent();
-        }
-
-        private void sendcomplaintbtnbuyer_Click(object sender, EventArgs e)
-        {
-            SendComplaint send=new SendComplaint(); 
-            send.Show();
-            this.Hide();
         }
     }
 }

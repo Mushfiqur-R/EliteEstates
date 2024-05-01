@@ -16,7 +16,7 @@ namespace EliteEstates
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SendComplaint());
+            Application.Run(new login());
         }
     }
 }

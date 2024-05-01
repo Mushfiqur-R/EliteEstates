@@ -155,6 +155,7 @@
             this.signinlink.Size = new System.Drawing.Size(66, 17);
             this.signinlink.TabIndex = 6;
             this.signinlink.Text = " Sign In";
+            this.signinlink.Click += new System.EventHandler(this.signinlink_Click);
             // 
             // gunaLabel2
             // 
