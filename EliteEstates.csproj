@@ -62,6 +62,12 @@
     <Compile Include="Add_Product.Designer.cs">
       <DependentUpon>Add_Product.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminDashboard.Designer.cs">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Adminsignin.cs">
       <SubType>Form</SubType>
     </Compile>

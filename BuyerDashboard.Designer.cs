@@ -197,6 +197,7 @@
             this.logoutbtnbuyer.OnHoverImageOffset = new System.Drawing.Point(0, 0);
             this.logoutbtnbuyer.Size = new System.Drawing.Size(38, 42);
             this.logoutbtnbuyer.TabIndex = 1;
+            this.logoutbtnbuyer.Click += new System.EventHandler(this.logoutbtnbuyer_Click);
             // 
             // buyersearchbartxt
             // 

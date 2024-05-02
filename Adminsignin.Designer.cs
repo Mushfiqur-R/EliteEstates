@@ -102,6 +102,7 @@
             this.Confirmsignbtnadmin.TabIndex = 22;
             this.Confirmsignbtnadmin.Text = "Confirm";
             this.Confirmsignbtnadmin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Confirmsignbtnadmin.Click += new System.EventHandler(this.Confirmsignbtnadmin_Click);
             // 
             // Emailtxtadmin
             // 

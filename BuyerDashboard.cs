@@ -23,5 +23,12 @@ namespace EliteEstates
             send.Show();
             this.Hide();
         }
+
+        private void logoutbtnbuyer_Click(object sender, EventArgs e)
+        {
+            login back=new login();
+            back.Show();
+            this.Hide();    
+        }
     }
 }

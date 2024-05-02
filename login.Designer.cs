@@ -31,7 +31,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.loginbtn = new Guna.UI.WinForms.GunaButton();
             this.passwordlbl = new System.Windows.Forms.Label();
-            this.password = new Guna.UI.WinForms.GunaLineTextBox();
+            this.passwordtxt = new Guna.UI.WinForms.GunaLineTextBox();
             this.usernametxt = new Guna.UI.WinForms.GunaLineTextBox();
             this.usernamelbl = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -46,7 +46,7 @@
             // 
             this.groupBox1.Controls.Add(this.loginbtn);
             this.groupBox1.Controls.Add(this.passwordlbl);
-            this.groupBox1.Controls.Add(this.password);
+            this.groupBox1.Controls.Add(this.passwordtxt);
             this.groupBox1.Controls.Add(this.usernametxt);
             this.groupBox1.Controls.Add(this.usernamelbl);
             this.groupBox1.Font = new System.Drawing.Font("Cooper Black", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -83,6 +83,7 @@
             this.loginbtn.TabIndex = 6;
             this.loginbtn.Text = "Log in";
             this.loginbtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.loginbtn.Click += new System.EventHandler(this.loginbtn_Click);
             // 
             // passwordlbl
             // 
@@ -95,19 +96,19 @@
             this.passwordlbl.TabIndex = 8;
             this.passwordlbl.Text = "Password :";
             // 
-            // password
+            // passwordtxt
             // 
-            this.password.BackColor = System.Drawing.Color.White;
-            this.password.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.password.FocusedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.password.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.password.LineColor = System.Drawing.Color.Gainsboro;
-            this.password.Location = new System.Drawing.Point(26, 194);
-            this.password.Name = "password";
-            this.password.PasswordChar = '*';
-            this.password.SelectedText = "";
-            this.password.Size = new System.Drawing.Size(268, 35);
-            this.password.TabIndex = 7;
+            this.passwordtxt.BackColor = System.Drawing.Color.White;
+            this.passwordtxt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.passwordtxt.FocusedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.passwordtxt.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.passwordtxt.LineColor = System.Drawing.Color.Gainsboro;
+            this.passwordtxt.Location = new System.Drawing.Point(26, 194);
+            this.passwordtxt.Name = "passwordtxt";
+            this.passwordtxt.PasswordChar = '*';
+            this.passwordtxt.SelectedText = "";
+            this.passwordtxt.Size = new System.Drawing.Size(268, 35);
+            this.passwordtxt.TabIndex = 7;
             // 
             // usernametxt
             // 
@@ -206,7 +207,7 @@
         private System.Windows.Forms.Label label2;
         private Guna.UI.WinForms.GunaLineTextBox usernametxt;
         private System.Windows.Forms.Label passwordlbl;
-        private Guna.UI.WinForms.GunaLineTextBox password;
+        private Guna.UI.WinForms.GunaLineTextBox passwordtxt;
         private Guna.UI.WinForms.GunaButton loginbtn;
         private Guna.UI.WinForms.GunaLabel signinlink;
         private Guna.UI.WinForms.GunaLabel gunaLabel2;

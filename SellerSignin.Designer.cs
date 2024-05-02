@@ -128,6 +128,7 @@
             this.Confirmsignbtnseller.TabIndex = 13;
             this.Confirmsignbtnseller.Text = "Confirm";
             this.Confirmsignbtnseller.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Confirmsignbtnseller.Click += new System.EventHandler(this.Confirmsignbtnseller_Click);
             // 
             // backbtnseller
             // 
