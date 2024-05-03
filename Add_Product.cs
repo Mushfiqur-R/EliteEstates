@@ -12,9 +12,21 @@ namespace EliteEstates
 {
     public partial class Add_Product : Form
     {
-        public Add_Product()
+        private int sellerId;
+        private string sellerUsername;
+
+        public Add_Product(int sellerId, string sellerUsername)
         {
             InitializeComponent();
+            this.sellerId = sellerId;
+            this.sellerUsername = sellerUsername;
+        }
+
+        private void backbtnaddproduct_Click(object sender, EventArgs e)
+        {
+            SellerDashboard back=new SellerDashboard(sellerId,sellerUsername);
+            back .Show();
+            this.Hide();
         }
     }
 }

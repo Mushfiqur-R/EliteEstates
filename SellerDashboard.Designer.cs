@@ -28,28 +28,41 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.withdrawbtn = new Guna.UI.WinForms.GunaButton();
             this.sendcomplaintbtn = new Guna.UI.WinForms.GunaButton();
             this.Transectionbtn = new Guna.UI.WinForms.GunaButton();
             this.editbtnseller = new Guna.UI.WinForms.GunaButton();
             this.snamelbl = new System.Windows.Forms.Label();
+            this.sellerpicture = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.searchbtn = new Guna.UI.WinForms.GunaImageButton();
             this.searchbarlbl = new System.Windows.Forms.Label();
+            this.logoutbtn = new Guna.UI.WinForms.GunaImageButton();
             this.sellersearchbartxt = new Guna.UI.WinForms.GunaLineTextBox();
             this.sellerbalance = new Guna.UI.WinForms.GunaElipsePanel();
             this.Currentbalance = new System.Windows.Forms.Label();
             this.currentbalancesellerlbl = new System.Windows.Forms.Label();
             this.Addbtns = new Guna.UI.WinForms.GunaButton();
             this.deletebtn = new Guna.UI.WinForms.GunaButton();
-            this.searchbtn = new Guna.UI.WinForms.GunaImageButton();
-            this.logoutbtn = new Guna.UI.WinForms.GunaImageButton();
-            this.sellerpicture = new Guna.UI.WinForms.GunaCirclePictureBox();
+            this.gridinsellerboard = new Guna.UI.WinForms.GunaDataGridView();
+            this.IDcolumnseller = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productnamecolumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sizecolumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.totalroomColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pricecolumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.locationColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.refrashseller = new Guna.UI.WinForms.GunaButton();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sellerpicture)).BeginInit();
             this.panel2.SuspendLayout();
             this.sellerbalance.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.sellerpicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridinsellerboard)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -180,6 +193,19 @@
             this.snamelbl.Size = new System.Drawing.Size(112, 20);
             this.snamelbl.TabIndex = 3;
             this.snamelbl.Text = "Seller Name";
+            this.snamelbl.Click += new System.EventHandler(this.snamelbl_Click);
+            // 
+            // sellerpicture
+            // 
+            this.sellerpicture.BaseColor = System.Drawing.Color.White;
+            this.sellerpicture.Image = global::EliteEstates.Properties.Resources._10426713;
+            this.sellerpicture.Location = new System.Drawing.Point(61, 24);
+            this.sellerpicture.Name = "sellerpicture";
+            this.sellerpicture.Size = new System.Drawing.Size(95, 74);
+            this.sellerpicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.sellerpicture.TabIndex = 0;
+            this.sellerpicture.TabStop = false;
+            this.sellerpicture.UseTransfarantBackground = false;
             // 
             // label1
             // 
@@ -202,6 +228,18 @@
             this.panel2.Size = new System.Drawing.Size(783, 50);
             this.panel2.TabIndex = 3;
             // 
+            // searchbtn
+            // 
+            this.searchbtn.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.searchbtn.Image = global::EliteEstates.Properties.Resources.searchlogo;
+            this.searchbtn.ImageSize = new System.Drawing.Size(64, 64);
+            this.searchbtn.Location = new System.Drawing.Point(537, 3);
+            this.searchbtn.Name = "searchbtn";
+            this.searchbtn.OnHoverImage = null;
+            this.searchbtn.OnHoverImageOffset = new System.Drawing.Point(0, 0);
+            this.searchbtn.Size = new System.Drawing.Size(44, 40);
+            this.searchbtn.TabIndex = 4;
+            // 
             // searchbarlbl
             // 
             this.searchbarlbl.AutoSize = true;
@@ -212,6 +250,18 @@
             this.searchbarlbl.Size = new System.Drawing.Size(78, 20);
             this.searchbarlbl.TabIndex = 6;
             this.searchbarlbl.Text = "Search :";
+            // 
+            // logoutbtn
+            // 
+            this.logoutbtn.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.logoutbtn.Image = global::EliteEstates.Properties.Resources.Signoutupdate;
+            this.logoutbtn.ImageSize = new System.Drawing.Size(64, 64);
+            this.logoutbtn.Location = new System.Drawing.Point(726, 3);
+            this.logoutbtn.Name = "logoutbtn";
+            this.logoutbtn.OnHoverImage = null;
+            this.logoutbtn.OnHoverImageOffset = new System.Drawing.Point(0, 0);
+            this.logoutbtn.Size = new System.Drawing.Size(43, 40);
+            this.logoutbtn.TabIndex = 1;
             // 
             // sellersearchbartxt
             // 
@@ -286,6 +336,7 @@
             this.Addbtns.TabIndex = 4;
             this.Addbtns.Text = "ADD";
             this.Addbtns.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Addbtns.Click += new System.EventHandler(this.Addbtns_Click);
             // 
             // deletebtn
             // 
@@ -313,47 +364,149 @@
             this.deletebtn.Text = "Delete";
             this.deletebtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // searchbtn
+            // gridinsellerboard
             // 
-            this.searchbtn.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.searchbtn.Image = global::EliteEstates.Properties.Resources.searchlogo;
-            this.searchbtn.ImageSize = new System.Drawing.Size(64, 64);
-            this.searchbtn.Location = new System.Drawing.Point(537, 3);
-            this.searchbtn.Name = "searchbtn";
-            this.searchbtn.OnHoverImage = null;
-            this.searchbtn.OnHoverImageOffset = new System.Drawing.Point(0, 0);
-            this.searchbtn.Size = new System.Drawing.Size(44, 40);
-            this.searchbtn.TabIndex = 4;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            this.gridinsellerboard.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+            this.gridinsellerboard.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gridinsellerboard.BackgroundColor = System.Drawing.Color.White;
+            this.gridinsellerboard.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.gridinsellerboard.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.gridinsellerboard.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridinsellerboard.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            this.gridinsellerboard.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridinsellerboard.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.IDcolumnseller,
+            this.productnamecolumn,
+            this.sizecolumn1,
+            this.totalroomColumn1,
+            this.pricecolumn1,
+            this.locationColumn1});
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridinsellerboard.DefaultCellStyle = dataGridViewCellStyle11;
+            this.gridinsellerboard.EnableHeadersVisualStyles = false;
+            this.gridinsellerboard.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.gridinsellerboard.Location = new System.Drawing.Point(277, 247);
+            this.gridinsellerboard.Name = "gridinsellerboard";
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridinsellerboard.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            this.gridinsellerboard.RowHeadersVisible = false;
+            this.gridinsellerboard.RowHeadersWidth = 51;
+            this.gridinsellerboard.RowTemplate.Height = 24;
+            this.gridinsellerboard.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.gridinsellerboard.Size = new System.Drawing.Size(738, 220);
+            this.gridinsellerboard.TabIndex = 6;
+            this.gridinsellerboard.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
+            this.gridinsellerboard.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.gridinsellerboard.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.gridinsellerboard.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.gridinsellerboard.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.gridinsellerboard.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.gridinsellerboard.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.gridinsellerboard.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.gridinsellerboard.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gridinsellerboard.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.gridinsellerboard.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.gridinsellerboard.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.gridinsellerboard.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridinsellerboard.ThemeStyle.HeaderStyle.Height = 52;
+            this.gridinsellerboard.ThemeStyle.ReadOnly = false;
+            this.gridinsellerboard.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.gridinsellerboard.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.gridinsellerboard.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.gridinsellerboard.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.gridinsellerboard.ThemeStyle.RowsStyle.Height = 24;
+            this.gridinsellerboard.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.gridinsellerboard.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // logoutbtn
+            // IDcolumnseller
             // 
-            this.logoutbtn.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.logoutbtn.Image = global::EliteEstates.Properties.Resources.Signoutupdate;
-            this.logoutbtn.ImageSize = new System.Drawing.Size(64, 64);
-            this.logoutbtn.Location = new System.Drawing.Point(726, 3);
-            this.logoutbtn.Name = "logoutbtn";
-            this.logoutbtn.OnHoverImage = null;
-            this.logoutbtn.OnHoverImageOffset = new System.Drawing.Point(0, 0);
-            this.logoutbtn.Size = new System.Drawing.Size(43, 40);
-            this.logoutbtn.TabIndex = 1;
+            this.IDcolumnseller.HeaderText = "ID";
+            this.IDcolumnseller.MinimumWidth = 6;
+            this.IDcolumnseller.Name = "IDcolumnseller";
             // 
-            // sellerpicture
+            // productnamecolumn
             // 
-            this.sellerpicture.BaseColor = System.Drawing.Color.White;
-            this.sellerpicture.Image = global::EliteEstates.Properties.Resources._10426713;
-            this.sellerpicture.Location = new System.Drawing.Point(61, 24);
-            this.sellerpicture.Name = "sellerpicture";
-            this.sellerpicture.Size = new System.Drawing.Size(95, 74);
-            this.sellerpicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.sellerpicture.TabIndex = 0;
-            this.sellerpicture.TabStop = false;
-            this.sellerpicture.UseTransfarantBackground = false;
+            this.productnamecolumn.HeaderText = "Product Name";
+            this.productnamecolumn.MinimumWidth = 6;
+            this.productnamecolumn.Name = "productnamecolumn";
+            // 
+            // sizecolumn1
+            // 
+            this.sizecolumn1.HeaderText = "Size(in feet)";
+            this.sizecolumn1.MinimumWidth = 6;
+            this.sizecolumn1.Name = "sizecolumn1";
+            // 
+            // totalroomColumn1
+            // 
+            this.totalroomColumn1.HeaderText = "Room";
+            this.totalroomColumn1.MinimumWidth = 6;
+            this.totalroomColumn1.Name = "totalroomColumn1";
+            // 
+            // pricecolumn1
+            // 
+            this.pricecolumn1.HeaderText = "Price";
+            this.pricecolumn1.MinimumWidth = 6;
+            this.pricecolumn1.Name = "pricecolumn1";
+            // 
+            // locationColumn1
+            // 
+            this.locationColumn1.HeaderText = "Location";
+            this.locationColumn1.MinimumWidth = 6;
+            this.locationColumn1.Name = "locationColumn1";
+            // 
+            // refrashseller
+            // 
+            this.refrashseller.AnimationHoverSpeed = 0.07F;
+            this.refrashseller.AnimationSpeed = 0.03F;
+            this.refrashseller.BackColor = System.Drawing.Color.Transparent;
+            this.refrashseller.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.refrashseller.BorderColor = System.Drawing.Color.Black;
+            this.refrashseller.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.refrashseller.FocusedColor = System.Drawing.Color.Empty;
+            this.refrashseller.Font = new System.Drawing.Font("Cooper Black", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.refrashseller.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.refrashseller.Image = null;
+            this.refrashseller.ImageSize = new System.Drawing.Size(20, 20);
+            this.refrashseller.Location = new System.Drawing.Point(683, 138);
+            this.refrashseller.Name = "refrashseller";
+            this.refrashseller.OnHoverBaseColor = System.Drawing.Color.Blue;
+            this.refrashseller.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.refrashseller.OnHoverForeColor = System.Drawing.Color.White;
+            this.refrashseller.OnHoverImage = null;
+            this.refrashseller.OnPressedColor = System.Drawing.Color.Black;
+            this.refrashseller.Radius = 15;
+            this.refrashseller.Size = new System.Drawing.Size(82, 42);
+            this.refrashseller.TabIndex = 7;
+            this.refrashseller.Text = "Refrash";
+            this.refrashseller.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // SellerDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1036, 547);
+            this.Controls.Add(this.refrashseller);
+            this.Controls.Add(this.gridinsellerboard);
             this.Controls.Add(this.deletebtn);
             this.Controls.Add(this.Addbtns);
             this.Controls.Add(this.sellerbalance);
@@ -364,11 +517,12 @@
             this.Text = " ";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sellerpicture)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.sellerbalance.ResumeLayout(false);
             this.sellerbalance.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.sellerpicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridinsellerboard)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -394,5 +548,13 @@
         private Guna.UI.WinForms.GunaButton Transectionbtn;
         private Guna.UI.WinForms.GunaButton sendcomplaintbtn;
         private Guna.UI.WinForms.GunaButton withdrawbtn;
+        private Guna.UI.WinForms.GunaDataGridView gridinsellerboard;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IDcolumnseller;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productnamecolumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sizecolumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn totalroomColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pricecolumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn locationColumn1;
+        private Guna.UI.WinForms.GunaButton refrashseller;
     }
 }

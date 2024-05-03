@@ -35,14 +35,11 @@
             this.setprice = new System.Windows.Forms.Label();
             this.setnametxt = new Guna.UI.WinForms.GunaTextBox();
             this.setnamelbl = new System.Windows.Forms.Label();
-            this.selectpicturebtnaddp = new Guna.UI.WinForms.GunaButton();
             this.setsize = new System.Windows.Forms.Label();
             this.setsizetxt = new Guna.UI.WinForms.GunaTextBox();
-            this.givebedroom = new System.Windows.Forms.Label();
-            this.bedroomnumbertxt = new Guna.UI.WinForms.GunaTextBox();
             this.confirmbtnaddproduct = new Guna.UI.WinForms.GunaButton();
-            this.setpictureaddpro = new Guna.UI.WinForms.GunaPictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.setpictureaddpro)).BeginInit();
+            this.label1 = new System.Windows.Forms.Label();
+            this.locationtxtbox = new Guna.UI.WinForms.GunaTextBox();
             this.SuspendLayout();
             // 
             // backbtnaddproduct
@@ -50,12 +47,13 @@
             this.backbtnaddproduct.DialogResult = System.Windows.Forms.DialogResult.None;
             this.backbtnaddproduct.Image = global::EliteEstates.Properties.Resources.backbutton;
             this.backbtnaddproduct.ImageSize = new System.Drawing.Size(64, 64);
-            this.backbtnaddproduct.Location = new System.Drawing.Point(737, 21);
+            this.backbtnaddproduct.Location = new System.Drawing.Point(480, 21);
             this.backbtnaddproduct.Name = "backbtnaddproduct";
             this.backbtnaddproduct.OnHoverImage = null;
             this.backbtnaddproduct.OnHoverImageOffset = new System.Drawing.Point(5, -1);
             this.backbtnaddproduct.Size = new System.Drawing.Size(36, 31);
             this.backbtnaddproduct.TabIndex = 26;
+            this.backbtnaddproduct.Click += new System.EventHandler(this.backbtnaddproduct_Click);
             // 
             // setroomnumtxt
             // 
@@ -66,7 +64,7 @@
             this.setroomnumtxt.FocusedBorderColor = System.Drawing.Color.Red;
             this.setroomnumtxt.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.setroomnumtxt.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.setroomnumtxt.Location = new System.Drawing.Point(12, 365);
+            this.setroomnumtxt.Location = new System.Drawing.Point(12, 261);
             this.setroomnumtxt.Name = "setroomnumtxt";
             this.setroomnumtxt.PasswordChar = '\0';
             this.setroomnumtxt.SelectedText = "";
@@ -77,7 +75,7 @@
             // 
             this.setroomnumber.AutoSize = true;
             this.setroomnumber.Font = new System.Drawing.Font("Cooper Black", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.setroomnumber.Location = new System.Drawing.Point(12, 341);
+            this.setroomnumber.Location = new System.Drawing.Point(12, 227);
             this.setroomnumber.Name = "setroomnumber";
             this.setroomnumber.Size = new System.Drawing.Size(181, 21);
             this.setroomnumber.TabIndex = 23;
@@ -92,7 +90,7 @@
             this.setpricetxt.FocusedBorderColor = System.Drawing.Color.Red;
             this.setpricetxt.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.setpricetxt.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.setpricetxt.Location = new System.Drawing.Point(16, 285);
+            this.setpricetxt.Location = new System.Drawing.Point(16, 173);
             this.setpricetxt.Name = "setpricetxt";
             this.setpricetxt.PasswordChar = '\0';
             this.setpricetxt.SelectedText = "";
@@ -103,7 +101,7 @@
             // 
             this.setprice.AutoSize = true;
             this.setprice.Font = new System.Drawing.Font("Cooper Black", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.setprice.Location = new System.Drawing.Point(12, 261);
+            this.setprice.Location = new System.Drawing.Point(12, 142);
             this.setprice.Name = "setprice";
             this.setprice.Size = new System.Drawing.Size(102, 21);
             this.setprice.TabIndex = 20;
@@ -118,7 +116,7 @@
             this.setnametxt.FocusedBorderColor = System.Drawing.Color.Red;
             this.setnametxt.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.setnametxt.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.setnametxt.Location = new System.Drawing.Point(16, 197);
+            this.setnametxt.Location = new System.Drawing.Point(12, 86);
             this.setnametxt.Name = "setnametxt";
             this.setnametxt.PasswordChar = '\0';
             this.setnametxt.SelectedText = "";
@@ -129,43 +127,17 @@
             // 
             this.setnamelbl.AutoSize = true;
             this.setnamelbl.Font = new System.Drawing.Font("Cooper Black", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.setnamelbl.Location = new System.Drawing.Point(12, 173);
+            this.setnamelbl.Location = new System.Drawing.Point(12, 48);
             this.setnamelbl.Name = "setnamelbl";
             this.setnamelbl.Size = new System.Drawing.Size(102, 21);
             this.setnamelbl.TabIndex = 17;
             this.setnamelbl.Text = "Set Name:";
             // 
-            // selectpicturebtnaddp
-            // 
-            this.selectpicturebtnaddp.AnimationHoverSpeed = 0.07F;
-            this.selectpicturebtnaddp.AnimationSpeed = 0.03F;
-            this.selectpicturebtnaddp.BackColor = System.Drawing.Color.Transparent;
-            this.selectpicturebtnaddp.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.selectpicturebtnaddp.BorderColor = System.Drawing.Color.Black;
-            this.selectpicturebtnaddp.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.selectpicturebtnaddp.FocusedColor = System.Drawing.Color.Empty;
-            this.selectpicturebtnaddp.Font = new System.Drawing.Font("Cooper Black", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.selectpicturebtnaddp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.selectpicturebtnaddp.Image = null;
-            this.selectpicturebtnaddp.ImageSize = new System.Drawing.Size(20, 20);
-            this.selectpicturebtnaddp.Location = new System.Drawing.Point(167, 55);
-            this.selectpicturebtnaddp.Name = "selectpicturebtnaddp";
-            this.selectpicturebtnaddp.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.selectpicturebtnaddp.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.selectpicturebtnaddp.OnHoverForeColor = System.Drawing.Color.White;
-            this.selectpicturebtnaddp.OnHoverImage = null;
-            this.selectpicturebtnaddp.OnPressedColor = System.Drawing.Color.Black;
-            this.selectpicturebtnaddp.Radius = 15;
-            this.selectpicturebtnaddp.Size = new System.Drawing.Size(160, 42);
-            this.selectpicturebtnaddp.TabIndex = 16;
-            this.selectpicturebtnaddp.Text = "Select Picture";
-            this.selectpicturebtnaddp.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // setsize
             // 
             this.setsize.AutoSize = true;
             this.setsize.Font = new System.Drawing.Font("Cooper Black", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.setsize.Location = new System.Drawing.Point(319, 173);
+            this.setsize.Location = new System.Drawing.Point(12, 313);
             this.setsize.Name = "setsize";
             this.setsize.Size = new System.Drawing.Size(242, 21);
             this.setsize.TabIndex = 27;
@@ -180,38 +152,12 @@
             this.setsizetxt.FocusedBorderColor = System.Drawing.Color.Red;
             this.setsizetxt.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.setsizetxt.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.setsizetxt.Location = new System.Drawing.Point(323, 197);
+            this.setsizetxt.Location = new System.Drawing.Point(16, 348);
             this.setsizetxt.Name = "setsizetxt";
             this.setsizetxt.PasswordChar = '\0';
             this.setsizetxt.SelectedText = "";
             this.setsizetxt.Size = new System.Drawing.Size(222, 39);
             this.setsizetxt.TabIndex = 28;
-            // 
-            // givebedroom
-            // 
-            this.givebedroom.AutoSize = true;
-            this.givebedroom.Font = new System.Drawing.Font("Cooper Black", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.givebedroom.Location = new System.Drawing.Point(319, 261);
-            this.givebedroom.Name = "givebedroom";
-            this.givebedroom.Size = new System.Drawing.Size(206, 21);
-            this.givebedroom.TabIndex = 29;
-            this.givebedroom.Text = "How many Bedroom?";
-            // 
-            // bedroomnumbertxt
-            // 
-            this.bedroomnumbertxt.BaseColor = System.Drawing.Color.White;
-            this.bedroomnumbertxt.BorderColor = System.Drawing.Color.Silver;
-            this.bedroomnumbertxt.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bedroomnumbertxt.FocusedBaseColor = System.Drawing.Color.White;
-            this.bedroomnumbertxt.FocusedBorderColor = System.Drawing.Color.Red;
-            this.bedroomnumbertxt.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.bedroomnumbertxt.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bedroomnumbertxt.Location = new System.Drawing.Point(323, 285);
-            this.bedroomnumbertxt.Name = "bedroomnumbertxt";
-            this.bedroomnumbertxt.PasswordChar = '\0';
-            this.bedroomnumbertxt.SelectedText = "";
-            this.bedroomnumbertxt.Size = new System.Drawing.Size(222, 39);
-            this.bedroomnumbertxt.TabIndex = 30;
             // 
             // confirmbtnaddproduct
             // 
@@ -226,7 +172,7 @@
             this.confirmbtnaddproduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.confirmbtnaddproduct.Image = null;
             this.confirmbtnaddproduct.ImageSize = new System.Drawing.Size(20, 20);
-            this.confirmbtnaddproduct.Location = new System.Drawing.Point(581, 382);
+            this.confirmbtnaddproduct.Location = new System.Drawing.Point(328, 345);
             this.confirmbtnaddproduct.Name = "confirmbtnaddproduct";
             this.confirmbtnaddproduct.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.confirmbtnaddproduct.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -239,24 +185,40 @@
             this.confirmbtnaddproduct.Text = "Confirm";
             this.confirmbtnaddproduct.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // setpictureaddpro
+            // label1
             // 
-            this.setpictureaddpro.BaseColor = System.Drawing.Color.White;
-            this.setpictureaddpro.Location = new System.Drawing.Point(16, 21);
-            this.setpictureaddpro.Name = "setpictureaddpro";
-            this.setpictureaddpro.Size = new System.Drawing.Size(120, 120);
-            this.setpictureaddpro.TabIndex = 32;
-            this.setpictureaddpro.TabStop = false;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Cooper Black", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(277, 60);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(88, 21);
+            this.label1.TabIndex = 32;
+            this.label1.Text = "Location";
+            // 
+            // locationtxtbox
+            // 
+            this.locationtxtbox.BaseColor = System.Drawing.Color.White;
+            this.locationtxtbox.BorderColor = System.Drawing.Color.Silver;
+            this.locationtxtbox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.locationtxtbox.FocusedBaseColor = System.Drawing.Color.White;
+            this.locationtxtbox.FocusedBorderColor = System.Drawing.Color.Red;
+            this.locationtxtbox.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.locationtxtbox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.locationtxtbox.Location = new System.Drawing.Point(266, 84);
+            this.locationtxtbox.Name = "locationtxtbox";
+            this.locationtxtbox.PasswordChar = '\0';
+            this.locationtxtbox.SelectedText = "";
+            this.locationtxtbox.Size = new System.Drawing.Size(222, 39);
+            this.locationtxtbox.TabIndex = 33;
             // 
             // Add_Product
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(799, 461);
-            this.Controls.Add(this.setpictureaddpro);
+            this.ClientSize = new System.Drawing.Size(539, 461);
+            this.Controls.Add(this.locationtxtbox);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.confirmbtnaddproduct);
-            this.Controls.Add(this.bedroomnumbertxt);
-            this.Controls.Add(this.givebedroom);
             this.Controls.Add(this.setsizetxt);
             this.Controls.Add(this.setsize);
             this.Controls.Add(this.backbtnaddproduct);
@@ -266,10 +228,8 @@
             this.Controls.Add(this.setprice);
             this.Controls.Add(this.setnametxt);
             this.Controls.Add(this.setnamelbl);
-            this.Controls.Add(this.selectpicturebtnaddp);
             this.Name = "Add_Product";
             this.Text = "Add_Product";
-            ((System.ComponentModel.ISupportInitialize)(this.setpictureaddpro)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -284,12 +244,10 @@
         private System.Windows.Forms.Label setprice;
         private Guna.UI.WinForms.GunaTextBox setnametxt;
         private System.Windows.Forms.Label setnamelbl;
-        private Guna.UI.WinForms.GunaButton selectpicturebtnaddp;
         private System.Windows.Forms.Label setsize;
         private Guna.UI.WinForms.GunaTextBox setsizetxt;
-        private System.Windows.Forms.Label givebedroom;
-        private Guna.UI.WinForms.GunaTextBox bedroomnumbertxt;
         private Guna.UI.WinForms.GunaButton confirmbtnaddproduct;
-        private Guna.UI.WinForms.GunaPictureBox setpictureaddpro;
+        private System.Windows.Forms.Label label1;
+        private Guna.UI.WinForms.GunaTextBox locationtxtbox;
     }
 }

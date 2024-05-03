@@ -72,10 +72,19 @@ namespace EliteEstates
                         buyerDashboard.Show();
                         this.Hide();
                     }
+                    /*  else if (sellerTable.Rows.Count > 0)
+                      {
+                          // Seller login
+                          SellerDashboard sellerDashboard = new SellerDashboard();
+                          sellerDashboard.Show();
+                          this.Hide();
+                      }*/
                     else if (sellerTable.Rows.Count > 0)
                     {
                         // Seller login
-                        SellerDashboard sellerDashboard = new SellerDashboard();
+                        int sellerId = Convert.ToInt32(sellerTable.Rows[0]["ID"]);
+                        string sellerUsername = sellerTable.Rows[0]["username"].ToString();//FOR USERNAME
+                        SellerDashboard sellerDashboard = new SellerDashboard(sellerId,sellerUsername);
                         sellerDashboard.Show();
                         this.Hide();
                     }
