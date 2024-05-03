@@ -184,6 +184,7 @@
             this.confirmbtnaddproduct.TabIndex = 31;
             this.confirmbtnaddproduct.Text = "Confirm";
             this.confirmbtnaddproduct.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.confirmbtnaddproduct.Click += new System.EventHandler(this.confirmbtnaddproduct_Click);
             // 
             // label1
             // 

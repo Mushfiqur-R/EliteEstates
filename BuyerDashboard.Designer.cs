@@ -58,6 +58,8 @@
             this.roomcolumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pricecolumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.locationcolumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SelleridColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sellernameColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Buyerbalance.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -233,7 +235,7 @@
             this.panel1.Controls.Add(this.buyerpicture);
             this.panel1.Location = new System.Drawing.Point(4, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(248, 543);
+            this.panel1.Size = new System.Drawing.Size(248, 571);
             this.panel1.TabIndex = 6;
             // 
             // Addcash
@@ -388,7 +390,9 @@
             this.Sizecolumn,
             this.roomcolumn,
             this.pricecolumn,
-            this.locationcolumn});
+            this.locationcolumn,
+            this.SelleridColumn,
+            this.sellernameColumn});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -415,7 +419,7 @@
             this.gunaDataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.gunaDataGridView1.RowTemplate.Height = 24;
             this.gunaDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gunaDataGridView1.Size = new System.Drawing.Size(775, 274);
+            this.gunaDataGridView1.Size = new System.Drawing.Size(775, 309);
             this.gunaDataGridView1.TabIndex = 12;
             this.gunaDataGridView1.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.gunaDataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -476,11 +480,23 @@
             this.locationcolumn.MinimumWidth = 6;
             this.locationcolumn.Name = "locationcolumn";
             // 
+            // SelleridColumn
+            // 
+            this.SelleridColumn.HeaderText = "SellerID";
+            this.SelleridColumn.MinimumWidth = 6;
+            this.SelleridColumn.Name = "SelleridColumn";
+            // 
+            // sellernameColumn
+            // 
+            this.sellernameColumn.HeaderText = "SellerName";
+            this.sellernameColumn.MinimumWidth = 6;
+            this.sellernameColumn.Name = "sellernameColumn";
+            // 
             // BuyerDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1051, 547);
+            this.ClientSize = new System.Drawing.Size(1051, 567);
             this.Controls.Add(this.gunaDataGridView1);
             this.Controls.Add(this.deletebtn);
             this.Controls.Add(this.buybtn);
@@ -530,5 +546,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn roomcolumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn pricecolumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn locationcolumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SelleridColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sellernameColumn;
     }
 }
