@@ -193,6 +193,13 @@ namespace EliteEstates
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
+
+        private void logoutbtn_Click(object sender, EventArgs e)
+        {
+            login back=new login();
+            back.Show();
+            this.Hide();
+        }
     }
 }
 

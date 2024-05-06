@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.withdrawbtn = new Guna.UI.WinForms.GunaButton();
             this.sendcomplaintbtn = new Guna.UI.WinForms.GunaButton();
@@ -57,9 +57,9 @@
             this.totalroomColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pricecolumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.locationColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.refrashseller = new Guna.UI.WinForms.GunaButton();
             this.selleridColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sellernameColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.refrashseller = new Guna.UI.WinForms.GunaButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sellerpicture)).BeginInit();
             this.panel2.SuspendLayout();
@@ -264,6 +264,7 @@
             this.logoutbtn.OnHoverImageOffset = new System.Drawing.Point(0, 0);
             this.logoutbtn.Size = new System.Drawing.Size(43, 40);
             this.logoutbtn.TabIndex = 1;
+            this.logoutbtn.Click += new System.EventHandler(this.logoutbtn_Click);
             // 
             // sellersearchbartxt
             // 
@@ -369,22 +370,22 @@
             // gridinsellerboard
             // 
             this.gridinsellerboard.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            this.gridinsellerboard.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.gridinsellerboard.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.gridinsellerboard.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridinsellerboard.BackgroundColor = System.Drawing.Color.White;
             this.gridinsellerboard.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridinsellerboard.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.gridinsellerboard.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridinsellerboard.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.gridinsellerboard.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridinsellerboard.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.gridinsellerboard.ColumnHeadersHeight = 52;
             this.gridinsellerboard.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.IDcolumnseller,
             this.productnamecolumn,
@@ -394,26 +395,26 @@
             this.locationColumn1,
             this.selleridColumn1,
             this.sellernameColumn1});
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridinsellerboard.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridinsellerboard.DefaultCellStyle = dataGridViewCellStyle3;
             this.gridinsellerboard.EnableHeadersVisualStyles = false;
             this.gridinsellerboard.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gridinsellerboard.Location = new System.Drawing.Point(246, 217);
             this.gridinsellerboard.Name = "gridinsellerboard";
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridinsellerboard.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridinsellerboard.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.gridinsellerboard.RowHeadersVisible = false;
             this.gridinsellerboard.RowHeadersWidth = 51;
             this.gridinsellerboard.RowTemplate.Height = 24;
@@ -432,7 +433,7 @@
             this.gridinsellerboard.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.gridinsellerboard.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.gridinsellerboard.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.gridinsellerboard.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridinsellerboard.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.gridinsellerboard.ThemeStyle.HeaderStyle.Height = 52;
             this.gridinsellerboard.ThemeStyle.ReadOnly = false;
             this.gridinsellerboard.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
@@ -479,6 +480,18 @@
             this.locationColumn1.MinimumWidth = 6;
             this.locationColumn1.Name = "locationColumn1";
             // 
+            // selleridColumn1
+            // 
+            this.selleridColumn1.HeaderText = "SellerID";
+            this.selleridColumn1.MinimumWidth = 6;
+            this.selleridColumn1.Name = "selleridColumn1";
+            // 
+            // sellernameColumn1
+            // 
+            this.sellernameColumn1.HeaderText = "Sellername";
+            this.sellernameColumn1.MinimumWidth = 6;
+            this.sellernameColumn1.Name = "sellernameColumn1";
+            // 
             // refrashseller
             // 
             this.refrashseller.AnimationHoverSpeed = 0.07F;
@@ -504,18 +517,6 @@
             this.refrashseller.TabIndex = 7;
             this.refrashseller.Text = "Refrash";
             this.refrashseller.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // selleridColumn1
-            // 
-            this.selleridColumn1.HeaderText = "SellerID";
-            this.selleridColumn1.MinimumWidth = 6;
-            this.selleridColumn1.Name = "selleridColumn1";
-            // 
-            // sellernameColumn1
-            // 
-            this.sellernameColumn1.HeaderText = "Sellername";
-            this.sellernameColumn1.MinimumWidth = 6;
-            this.sellernameColumn1.Name = "sellernameColumn1";
             // 
             // SellerDashboard
             // 
