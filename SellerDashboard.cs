@@ -200,6 +200,13 @@ namespace EliteEstates
             back.Show();
             this.Hide();
         }
+
+        private void sendcomplaintbtn_Click(object sender, EventArgs e)
+        {
+            SendComplaint send = new SendComplaint(sellerId,isSeller:true);
+            send.Show();
+            this.Hide();
+        }
     }
 }
 

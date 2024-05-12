@@ -104,6 +104,12 @@
     <Compile Include="Frontpage.Designer.cs">
       <DependentUpon>Frontpage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Inputcashammount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inputcashammount.Designer.cs">
+      <DependentUpon>Inputcashammount.cs</DependentUpon>
+    </Compile>
     <Compile Include="login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +144,9 @@
     <EmbeddedResource Include="Add_Product.resx">
       <DependentUpon>Add_Product.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AdminDashboard.resx">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Adminsignin.resx">
       <DependentUpon>Adminsignin.cs</DependentUpon>
     </EmbeddedResource>
@@ -155,6 +164,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frontpage.resx">
       <DependentUpon>Frontpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inputcashammount.resx">
+      <DependentUpon>Inputcashammount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>

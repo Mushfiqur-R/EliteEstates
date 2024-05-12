@@ -91,6 +91,7 @@
             this.Sendcomplaintbtn.TabIndex = 4;
             this.Sendcomplaintbtn.Text = "Send ";
             this.Sendcomplaintbtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Sendcomplaintbtn.Click += new System.EventHandler(this.Sendcomplaintbtn_Click);
             // 
             // label2
             // 
@@ -115,6 +116,7 @@
             this.backbtnsendcomplaint.OnHoverImageOffset = new System.Drawing.Point(5, -1);
             this.backbtnsendcomplaint.Size = new System.Drawing.Size(36, 31);
             this.backbtnsendcomplaint.TabIndex = 15;
+            this.backbtnsendcomplaint.Click += new System.EventHandler(this.backbtnsendcomplaint_Click);
             // 
             // SendComplaint
             // 

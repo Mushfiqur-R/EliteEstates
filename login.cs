@@ -68,7 +68,9 @@ namespace EliteEstates
                     if (buyerTable.Rows.Count > 0)
                     {
                         // Buyer login
-                        BuyerDashboard buyerDashboard = new BuyerDashboard();
+                        int buyerId = Convert.ToInt32(buyerTable.Rows[0]["ID"]);
+                        string buyerUsername = buyerTable.Rows[0]["username"].ToString();
+                        BuyerDashboard buyerDashboard = new BuyerDashboard(buyerId);
                         buyerDashboard.Show();
                         this.Hide();
                     }
@@ -91,6 +93,8 @@ namespace EliteEstates
                     else if (adminTable.Rows.Count > 0)
                     {
                         // Admin login
+                        int adminId = Convert.ToInt32(adminTable.Rows[0]["ID"]);
+                        string adminUsername = adminTable.Rows[0]["username"].ToString();
                         AdminDashboard adminDashboard = new AdminDashboard();
                         adminDashboard.Show();
                         this.Hide();

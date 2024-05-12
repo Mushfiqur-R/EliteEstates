@@ -118,6 +118,7 @@
             this.buybtn.TabIndex = 10;
             this.buybtn.Text = "Buy";
             this.buybtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.buybtn.Click += new System.EventHandler(this.buybtn_Click);
             // 
             // Buyerbalance
             // 
@@ -136,11 +137,12 @@
             this.Currentbalancebuyer.AutoSize = true;
             this.Currentbalancebuyer.Font = new System.Drawing.Font("Cooper Black", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Currentbalancebuyer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.Currentbalancebuyer.Location = new System.Drawing.Point(63, 60);
+            this.Currentbalancebuyer.Location = new System.Drawing.Point(60, 62);
             this.Currentbalancebuyer.Name = "Currentbalancebuyer";
             this.Currentbalancebuyer.Size = new System.Drawing.Size(51, 35);
             this.Currentbalancebuyer.TabIndex = 5;
             this.Currentbalancebuyer.Text = "00";
+            this.Currentbalancebuyer.Click += new System.EventHandler(this.Currentbalancebuyer_Click);
             // 
             // currentbalancebuyerlbl
             // 
@@ -263,6 +265,7 @@
             this.Addcash.TabIndex = 6;
             this.Addcash.Text = "Cash Deposit";
             this.Addcash.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Addcash.Click += new System.EventHandler(this.Addcash_Click);
             // 
             // sendcomplaintbtnbuyer
             // 
@@ -342,6 +345,7 @@
             this.editbtnbuyer.TabIndex = 3;
             this.editbtnbuyer.Text = "Edit Info";
             this.editbtnbuyer.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.editbtnbuyer.Click += new System.EventHandler(this.editbtnbuyer_Click);
             // 
             // bnamelbl
             // 

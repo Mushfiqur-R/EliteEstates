@@ -38,12 +38,9 @@
             this.Transectionbtn = new Guna.UI.WinForms.GunaButton();
             this.editbtnseller = new Guna.UI.WinForms.GunaButton();
             this.snamelbl = new System.Windows.Forms.Label();
-            this.sellerpicture = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.searchbtn = new Guna.UI.WinForms.GunaImageButton();
             this.searchbarlbl = new System.Windows.Forms.Label();
-            this.logoutbtn = new Guna.UI.WinForms.GunaImageButton();
             this.sellersearchbartxt = new Guna.UI.WinForms.GunaLineTextBox();
             this.sellerbalance = new Guna.UI.WinForms.GunaElipsePanel();
             this.Currentbalance = new System.Windows.Forms.Label();
@@ -60,11 +57,14 @@
             this.selleridColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sellernameColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.refrashseller = new Guna.UI.WinForms.GunaButton();
+            this.searchbtn = new Guna.UI.WinForms.GunaImageButton();
+            this.logoutbtn = new Guna.UI.WinForms.GunaImageButton();
+            this.sellerpicture = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.sellerpicture)).BeginInit();
             this.panel2.SuspendLayout();
             this.sellerbalance.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridinsellerboard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sellerpicture)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -132,6 +132,7 @@
             this.sendcomplaintbtn.TabIndex = 5;
             this.sendcomplaintbtn.Text = "Send complaint";
             this.sendcomplaintbtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.sendcomplaintbtn.Click += new System.EventHandler(this.sendcomplaintbtn_Click);
             // 
             // Transectionbtn
             // 
@@ -197,18 +198,6 @@
             this.snamelbl.Text = "Seller Name";
             this.snamelbl.Click += new System.EventHandler(this.snamelbl_Click);
             // 
-            // sellerpicture
-            // 
-            this.sellerpicture.BaseColor = System.Drawing.Color.White;
-            this.sellerpicture.Image = global::EliteEstates.Properties.Resources._10426713;
-            this.sellerpicture.Location = new System.Drawing.Point(61, 24);
-            this.sellerpicture.Name = "sellerpicture";
-            this.sellerpicture.Size = new System.Drawing.Size(95, 74);
-            this.sellerpicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.sellerpicture.TabIndex = 0;
-            this.sellerpicture.TabStop = false;
-            this.sellerpicture.UseTransfarantBackground = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -230,18 +219,6 @@
             this.panel2.Size = new System.Drawing.Size(853, 50);
             this.panel2.TabIndex = 3;
             // 
-            // searchbtn
-            // 
-            this.searchbtn.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.searchbtn.Image = global::EliteEstates.Properties.Resources.searchlogo;
-            this.searchbtn.ImageSize = new System.Drawing.Size(64, 64);
-            this.searchbtn.Location = new System.Drawing.Point(537, 3);
-            this.searchbtn.Name = "searchbtn";
-            this.searchbtn.OnHoverImage = null;
-            this.searchbtn.OnHoverImageOffset = new System.Drawing.Point(0, 0);
-            this.searchbtn.Size = new System.Drawing.Size(44, 40);
-            this.searchbtn.TabIndex = 4;
-            // 
             // searchbarlbl
             // 
             this.searchbarlbl.AutoSize = true;
@@ -252,19 +229,6 @@
             this.searchbarlbl.Size = new System.Drawing.Size(78, 20);
             this.searchbarlbl.TabIndex = 6;
             this.searchbarlbl.Text = "Search :";
-            // 
-            // logoutbtn
-            // 
-            this.logoutbtn.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.logoutbtn.Image = global::EliteEstates.Properties.Resources.Signoutupdate;
-            this.logoutbtn.ImageSize = new System.Drawing.Size(64, 64);
-            this.logoutbtn.Location = new System.Drawing.Point(789, 5);
-            this.logoutbtn.Name = "logoutbtn";
-            this.logoutbtn.OnHoverImage = null;
-            this.logoutbtn.OnHoverImageOffset = new System.Drawing.Point(0, 0);
-            this.logoutbtn.Size = new System.Drawing.Size(43, 40);
-            this.logoutbtn.TabIndex = 1;
-            this.logoutbtn.Click += new System.EventHandler(this.logoutbtn_Click);
             // 
             // sellersearchbartxt
             // 
@@ -518,6 +482,43 @@
             this.refrashseller.Text = "Refrash";
             this.refrashseller.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // searchbtn
+            // 
+            this.searchbtn.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.searchbtn.Image = global::EliteEstates.Properties.Resources.searchlogo;
+            this.searchbtn.ImageSize = new System.Drawing.Size(64, 64);
+            this.searchbtn.Location = new System.Drawing.Point(537, 3);
+            this.searchbtn.Name = "searchbtn";
+            this.searchbtn.OnHoverImage = null;
+            this.searchbtn.OnHoverImageOffset = new System.Drawing.Point(0, 0);
+            this.searchbtn.Size = new System.Drawing.Size(44, 40);
+            this.searchbtn.TabIndex = 4;
+            // 
+            // logoutbtn
+            // 
+            this.logoutbtn.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.logoutbtn.Image = global::EliteEstates.Properties.Resources.Signoutupdate;
+            this.logoutbtn.ImageSize = new System.Drawing.Size(64, 64);
+            this.logoutbtn.Location = new System.Drawing.Point(789, 5);
+            this.logoutbtn.Name = "logoutbtn";
+            this.logoutbtn.OnHoverImage = null;
+            this.logoutbtn.OnHoverImageOffset = new System.Drawing.Point(0, 0);
+            this.logoutbtn.Size = new System.Drawing.Size(43, 40);
+            this.logoutbtn.TabIndex = 1;
+            this.logoutbtn.Click += new System.EventHandler(this.logoutbtn_Click);
+            // 
+            // sellerpicture
+            // 
+            this.sellerpicture.BaseColor = System.Drawing.Color.White;
+            this.sellerpicture.Image = global::EliteEstates.Properties.Resources._10426713;
+            this.sellerpicture.Location = new System.Drawing.Point(61, 24);
+            this.sellerpicture.Name = "sellerpicture";
+            this.sellerpicture.Size = new System.Drawing.Size(95, 74);
+            this.sellerpicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.sellerpicture.TabIndex = 0;
+            this.sellerpicture.TabStop = false;
+            this.sellerpicture.UseTransfarantBackground = false;
+            // 
             // SellerDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -535,12 +536,12 @@
             this.Text = " ";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.sellerpicture)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.sellerbalance.ResumeLayout(false);
             this.sellerbalance.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridinsellerboard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sellerpicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -13,9 +13,11 @@ namespace EliteEstates
 {
     public partial class BuyerDashboard : Form
     {
-        public BuyerDashboard()
+        private int buyerId;
+        public BuyerDashboard(int buyerId)
         {
             InitializeComponent();
+            this.buyerId = buyerId;
             DisplayAllProducts();
         }
         private void DisplayAllProducts()
@@ -47,16 +49,72 @@ namespace EliteEstates
 
         private void sendcomplaintbtnbuyer_Click(object sender, EventArgs e)
         {
-            SendComplaint send=new SendComplaint(); 
+            SendComplaint send = new SendComplaint(buyerId);
             send.Show();
             this.Hide();
         }
 
         private void logoutbtnbuyer_Click(object sender, EventArgs e)
         {
-            login back=new login();
+            login back = new login();
             back.Show();
-            this.Hide();    
+            this.Hide();
+        }
+
+        private void Addcash_Click(object sender, EventArgs e)
+        {
+            Inputcashammount insert=new Inputcashammount(buyerId);
+            insert.Show();  
+            this.Hide();
+        }
+
+        private void Currentbalancebuyer_Click(object sender, EventArgs e)
+        {
+            string connectionString = "Data Source=USER\\SQLEXPRESS;Initial Catalog=EliteEstates;Integrated Security=True;";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    connection.Open();
+
+                    string query = "SELECT Balance FROM BuyerBalance WHERE BuyerID = @BuyerID";
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@BuyerID", buyerId);
+                        object result = command.ExecuteScalar();
+
+                        if (result != null && result != DBNull.Value) // Check for null or DBNull.Value
+                        {
+                            // Convert result to decimal and set label text to balance value
+                            decimal balance = Convert.ToDecimal(result);
+                            Currentbalancebuyer.Text = balance.ToString(); // Display only the balance value
+                        }
+                        else
+                        {
+                            Currentbalancebuyer.Text = "0.00"; // Default to 0 if balance is not found
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error fetching balance: " + ex.Message);
+                }
+            }
+        }
+
+        private void editbtnbuyer_Click(object sender, EventArgs e)
+        {
+            Editinfo edit=new Editinfo(buyerId);
+            edit.Show();
+            this.Hide();
+        }
+
+        private void buybtn_Click(object sender, EventArgs e)
+        {
+            Buyitem buyitem = new Buyitem(buyerId);
+            buyitem.Show();
+            this.Hide();
         }
     }
-}
+    }
+    

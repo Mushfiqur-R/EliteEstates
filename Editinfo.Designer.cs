@@ -158,6 +158,7 @@
             this.backbtneditinfo.OnHoverImageOffset = new System.Drawing.Point(5, -1);
             this.backbtneditinfo.Size = new System.Drawing.Size(36, 31);
             this.backbtneditinfo.TabIndex = 14;
+            this.backbtneditinfo.Click += new System.EventHandler(this.backbtneditinfo_Click);
             // 
             // changeemailbtn
             // 
@@ -170,6 +171,7 @@
             this.changeemailbtn.OnHoverImageOffset = new System.Drawing.Point(2, 1);
             this.changeemailbtn.Size = new System.Drawing.Size(32, 39);
             this.changeemailbtn.TabIndex = 13;
+            this.changeemailbtn.Click += new System.EventHandler(this.changeemailbtn_Click);
             // 
             // gunaImageButton1
             // 
@@ -182,6 +184,7 @@
             this.gunaImageButton1.OnHoverImageOffset = new System.Drawing.Point(2, 1);
             this.gunaImageButton1.Size = new System.Drawing.Size(32, 39);
             this.gunaImageButton1.TabIndex = 10;
+            this.gunaImageButton1.Click += new System.EventHandler(this.gunaImageButton1_Click);
             // 
             // changenamebtn
             // 
@@ -194,6 +197,7 @@
             this.changenamebtn.OnHoverImageOffset = new System.Drawing.Point(2, 1);
             this.changenamebtn.Size = new System.Drawing.Size(32, 39);
             this.changenamebtn.TabIndex = 7;
+            this.changenamebtn.Click += new System.EventHandler(this.changenamebtn_Click);
             // 
             // selectpicture
             // 
