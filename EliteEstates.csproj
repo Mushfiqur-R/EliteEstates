@@ -123,6 +123,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="SeeComplain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeeComplain.Designer.cs">
+      <DependentUpon>SeeComplain.cs</DependentUpon>
+    </Compile>
     <Compile Include="SellerDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +146,12 @@
     </Compile>
     <Compile Include="SellerSignin.Designer.cs">
       <DependentUpon>SellerSignin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransectionHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransectionHistory.Designer.cs">
+      <DependentUpon>TransectionHistory.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Add_Product.resx">
       <DependentUpon>Add_Product.cs</DependentUpon>
@@ -176,6 +188,9 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="SeeComplain.resx">
+      <DependentUpon>SeeComplain.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SellerDashboard.resx">
       <DependentUpon>SellerDashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -184,6 +199,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SellerSignin.resx">
       <DependentUpon>SellerSignin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransectionHistory.resx">
+      <DependentUpon>TransectionHistory.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.manifest" />
     <None Include="Properties\Settings.settings">

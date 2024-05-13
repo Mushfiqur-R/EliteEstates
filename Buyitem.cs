@@ -55,8 +55,10 @@ namespace EliteEstates
                     using (SqlConnection connection = new SqlConnection("Data Source=USER\\SQLEXPRESS;Initial Catalog=EliteEstates;Integrated Security=True"))
                     {
                         connection.Open();
-                        SqlTransaction transaction = connection.BeginTransaction();
+                        SqlTransaction transaction = connection.BeginTransaction();// multiple datatable e jokhon update kora lage . hoy ektay korbe
+                        //nahole konotai korbe na. ekhane buyer balance seller  admin er balance table update hocche sathe product table o change hocche.
 
+                       
                         // Update buyer balance
                         string updateBuyerQuery = "UPDATE BuyerBalance SET Balance = Balance - @ProductPrice WHERE BuyerID = @BuyerId";
                         using (SqlCommand updateBuyerCommand = new SqlCommand(updateBuyerQuery, connection, transaction))
@@ -105,10 +107,44 @@ namespace EliteEstates
                                 return;
                             }
                         }
-
+                        // Delete product
+                        string deleteProductQuery = "DELETE FROM Product WHERE ProductID = @ProductId";
+                        using (SqlCommand deleteProductCommand = new SqlCommand(deleteProductQuery, connection, transaction))
+                        {
+                            deleteProductCommand.Parameters.AddWithValue("@ProductId", productId);
+                            int productRowsAffected = deleteProductCommand.ExecuteNonQuery();
+                            if (productRowsAffected == 0)
+                            {
+                                MessageBox.Show("Error deleting product.");
+                                transaction.Rollback();
+                                return;
+                            }
+                        }
+                        string insertTransactionQuery = @"INSERT INTO TransectionHistory (BuyerID, SellerID, ProductPrice, TransectionNumber, ProductID)
+                        VALUES (@BuyerId, @SellerId, @ProductPrice, @TransactionNumber, @ProductId)";
+                        using (SqlCommand insertTransactionCommand = new SqlCommand(insertTransactionQuery, connection, transaction))
+                        {
+                            insertTransactionCommand.Parameters.AddWithValue("@BuyerId", buyerId);
+                            insertTransactionCommand.Parameters.AddWithValue("@SellerId", sellerId);
+                            insertTransactionCommand.Parameters.AddWithValue("@ProductPrice", productPrice);
+                            insertTransactionCommand.Parameters.AddWithValue("@TransactionNumber", GenerateRandomTransactionNumber());
+                            insertTransactionCommand.Parameters.AddWithValue("@ProductId", productId);
+                            insertTransactionCommand.ExecuteNonQuery();
+                        }
                         transaction.Commit();
-                        MessageBox.Show("Purchase successful!");
+                        MessageBox.Show("Purchase successful! Product deleted and transaction recorded.");
+                    
+                
+
+
+                      //  transaction.Commit();
+                      // MessageBox.Show("Purchase successful!P.");
                     }
+
+                    //transaction.Commit();
+                    //   MessageBox.Show("Purchase successful!");
+
+                
                 }
                 catch (Exception ex)
                 {
@@ -120,6 +156,12 @@ namespace EliteEstates
                 MessageBox.Show("Insufficient balance. Please deposit more funds.");
             }
         }
+        private string GenerateRandomTransactionNumber()// method to generate random number  for transection number 4 digit
+        {
+            Random rnd = new Random();
+            return rnd.Next(10000000, 100000000).ToString();
+        }
+
         private int GetSellerIdForProduct(int productId)
         {
             int sellerId = 0;
@@ -178,6 +220,13 @@ namespace EliteEstates
             }
 
             return productPrice;
+        }
+
+        private void backbtneditinfo_Click(object sender, EventArgs e)
+        {
+            BuyerDashboard back=new BuyerDashboard(buyerId);
+            back.Show();
+            this.Hide();
         }
     }
 }

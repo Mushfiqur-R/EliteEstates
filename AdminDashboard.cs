@@ -12,6 +12,7 @@ namespace EliteEstates
 {
     public partial class AdminDashboard : Form
     {
+        private int adminId;
         public AdminDashboard()
         {
             InitializeComponent();
@@ -20,6 +21,25 @@ namespace EliteEstates
         private void gunaButton3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void transectionbtnadmin_Click(object sender, EventArgs e)
+        {
+            TransectionHistory see=new TransectionHistory();
+            see.Show();
+            this.Hide();
+        }
+
+        private void seecomplainbtnadmin_Click(object sender, EventArgs e)
+        {
+            SeeComplain see=new SeeComplain();
+            see.Show();
+            this.Hide();
         }
     }
 }

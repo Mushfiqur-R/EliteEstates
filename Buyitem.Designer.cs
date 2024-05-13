@@ -31,6 +31,7 @@
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.selectitemforbuy = new Guna.UI.WinForms.GunaLineTextBox();
             this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
+            this.backbtneditinfo = new Guna.UI.WinForms.GunaImageButton();
             this.SuspendLayout();
             // 
             // gunaLabel1
@@ -86,11 +87,25 @@
             this.gunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gunaButton1.Click += new System.EventHandler(this.gunaButton1_Click);
             // 
+            // backbtneditinfo
+            // 
+            this.backbtneditinfo.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.backbtneditinfo.Image = global::EliteEstates.Properties.Resources.backbutton;
+            this.backbtneditinfo.ImageSize = new System.Drawing.Size(64, 64);
+            this.backbtneditinfo.Location = new System.Drawing.Point(365, 22);
+            this.backbtneditinfo.Name = "backbtneditinfo";
+            this.backbtneditinfo.OnHoverImage = null;
+            this.backbtneditinfo.OnHoverImageOffset = new System.Drawing.Point(5, -1);
+            this.backbtneditinfo.Size = new System.Drawing.Size(36, 31);
+            this.backbtneditinfo.TabIndex = 15;
+            this.backbtneditinfo.Click += new System.EventHandler(this.backbtneditinfo_Click);
+            // 
             // Buyitem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(431, 317);
+            this.Controls.Add(this.backbtneditinfo);
             this.Controls.Add(this.gunaButton1);
             this.Controls.Add(this.selectitemforbuy);
             this.Controls.Add(this.gunaLabel1);
@@ -106,5 +121,6 @@
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private Guna.UI.WinForms.GunaLineTextBox selectitemforbuy;
         private Guna.UI.WinForms.GunaButton gunaButton1;
+        private Guna.UI.WinForms.GunaImageButton backbtneditinfo;
     }
 }

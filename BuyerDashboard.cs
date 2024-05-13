@@ -19,6 +19,7 @@ namespace EliteEstates
             InitializeComponent();
             this.buyerId = buyerId;
             DisplayAllProducts();
+            Displaybalance();
         }
         private void DisplayAllProducts()
         {
@@ -69,6 +70,41 @@ namespace EliteEstates
         }
 
         private void Currentbalancebuyer_Click(object sender, EventArgs e)
+        {
+            /* string connectionString = "Data Source=USER\\SQLEXPRESS;Initial Catalog=EliteEstates;Integrated Security=True;";
+             using (SqlConnection connection = new SqlConnection(connectionString))
+             {
+                 try
+                 {
+                     connection.Open();
+
+                     string query = "SELECT Balance FROM BuyerBalance WHERE BuyerID = @BuyerID";
+                     using (SqlCommand command = new SqlCommand(query, connection))
+                     {
+                         command.Parameters.AddWithValue("@BuyerID", buyerId);
+                         object result = command.ExecuteScalar();
+
+                         if (result != null && result != DBNull.Value) // Check for null or DBNull.Value
+                         {
+                             // Convert result to decimal and set label text to balance value
+                             decimal balance = Convert.ToDecimal(result);
+                             Currentbalancebuyer.Text = balance.ToString(); // Display only the balance value
+                         }
+                         else
+                         {
+                             Currentbalancebuyer.Text = "0.00"; // Default to 0 if balance is not found
+                         }
+                     }
+                 }
+                 catch (Exception ex)
+                 {
+                     MessageBox.Show("Error fetching balance: " + ex.Message);
+                 }*/
+            Displaybalance();
+        
+            }
+        
+        private void Displaybalance()
         {
             string connectionString = "Data Source=USER\\SQLEXPRESS;Initial Catalog=EliteEstates;Integrated Security=True;";
             using (SqlConnection connection = new SqlConnection(connectionString))

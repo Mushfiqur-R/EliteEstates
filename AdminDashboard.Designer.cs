@@ -28,16 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.searchbarlblb = new System.Windows.Forms.Label();
-            this.buyersearchbartxt = new Guna.UI.WinForms.GunaLineTextBox();
-            this.searchbtnbuyer = new Guna.UI.WinForms.GunaImageButton();
-            this.logoutbtnbuyer = new Guna.UI.WinForms.GunaImageButton();
             this.buyergridview = new Guna.UI.WinForms.GunaDataGridView();
             this.IDcolumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Productnamecolumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,9 +49,7 @@
             this.Currentbalancebuyer = new System.Windows.Forms.Label();
             this.currentbalancebuyerlbl = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.gunaImageButton1 = new Guna.UI.WinForms.GunaImageButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.gunaImageButton2 = new Guna.UI.WinForms.GunaImageButton();
             this.gunaLineTextBox1 = new Guna.UI.WinForms.GunaLineTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -64,36 +58,42 @@
             this.Transectionbtnbuyer = new Guna.UI.WinForms.GunaButton();
             this.editbtnbuyer = new Guna.UI.WinForms.GunaButton();
             this.bnamelbl = new System.Windows.Forms.Label();
-            this.buyerpicture = new Guna.UI.WinForms.GunaCirclePictureBox();
+            this.searchbarlblb = new System.Windows.Forms.Label();
+            this.buyersearchbartxt = new Guna.UI.WinForms.GunaLineTextBox();
             this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
             this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
             this.gunaElipsePanel1 = new Guna.UI.WinForms.GunaElipsePanel();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.gunaImageButton3 = new Guna.UI.WinForms.GunaImageButton();
             this.label5 = new System.Windows.Forms.Label();
-            this.gunaImageButton4 = new Guna.UI.WinForms.GunaImageButton();
             this.gunaLineTextBox2 = new Guna.UI.WinForms.GunaLineTextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.gunaButton6 = new Guna.UI.WinForms.GunaButton();
+            this.adminlbl = new System.Windows.Forms.Label();
             this.Cashwithdrawadmin = new Guna.UI.WinForms.GunaButton();
             this.seecomplainbtnadmin = new Guna.UI.WinForms.GunaButton();
             this.transectionbtnadmin = new Guna.UI.WinForms.GunaButton();
-            this.gunaButton6 = new Guna.UI.WinForms.GunaButton();
-            this.adminlbl = new System.Windows.Forms.Label();
-            this.gunaCirclePictureBox1 = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.usercontrolbrnadmin = new Guna.UI.WinForms.GunaButton();
+            this.gunaImageButton3 = new Guna.UI.WinForms.GunaImageButton();
+            this.gunaImageButton4 = new Guna.UI.WinForms.GunaImageButton();
+            this.gunaCirclePictureBox1 = new Guna.UI.WinForms.GunaCirclePictureBox();
+            this.gunaImageButton1 = new Guna.UI.WinForms.GunaImageButton();
+            this.gunaImageButton2 = new Guna.UI.WinForms.GunaImageButton();
+            this.buyerpicture = new Guna.UI.WinForms.GunaCirclePictureBox();
+            this.searchbtnbuyer = new Guna.UI.WinForms.GunaImageButton();
+            this.logoutbtnbuyer = new Guna.UI.WinForms.GunaImageButton();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.buyergridview)).BeginInit();
             this.Buyerbalance.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.buyerpicture)).BeginInit();
             this.gunaElipsePanel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buyerpicture)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -115,72 +115,23 @@
             this.panel2.Size = new System.Drawing.Size(783, 50);
             this.panel2.TabIndex = 16;
             // 
-            // searchbarlblb
-            // 
-            this.searchbarlblb.AutoSize = true;
-            this.searchbarlblb.Font = new System.Drawing.Font("Cooper Black", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchbarlblb.ForeColor = System.Drawing.Color.White;
-            this.searchbarlblb.Location = new System.Drawing.Point(152, 15);
-            this.searchbarlblb.Name = "searchbarlblb";
-            this.searchbarlblb.Size = new System.Drawing.Size(78, 20);
-            this.searchbarlblb.TabIndex = 6;
-            this.searchbarlblb.Text = "Search :";
-            // 
-            // buyersearchbartxt
-            // 
-            this.buyersearchbartxt.BackColor = System.Drawing.Color.LightGray;
-            this.buyersearchbartxt.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.buyersearchbartxt.FocusedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.buyersearchbartxt.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.buyersearchbartxt.LineColor = System.Drawing.Color.Gainsboro;
-            this.buyersearchbartxt.Location = new System.Drawing.Point(249, 5);
-            this.buyersearchbartxt.Name = "buyersearchbartxt";
-            this.buyersearchbartxt.PasswordChar = '\0';
-            this.buyersearchbartxt.SelectedText = "";
-            this.buyersearchbartxt.Size = new System.Drawing.Size(282, 30);
-            this.buyersearchbartxt.TabIndex = 4;
-            // 
-            // searchbtnbuyer
-            // 
-            this.searchbtnbuyer.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.searchbtnbuyer.Image = global::EliteEstates.Properties.Resources.searchlogo;
-            this.searchbtnbuyer.ImageSize = new System.Drawing.Size(64, 64);
-            this.searchbtnbuyer.Location = new System.Drawing.Point(537, 3);
-            this.searchbtnbuyer.Name = "searchbtnbuyer";
-            this.searchbtnbuyer.OnHoverImage = null;
-            this.searchbtnbuyer.OnHoverImageOffset = new System.Drawing.Point(0, 0);
-            this.searchbtnbuyer.Size = new System.Drawing.Size(44, 40);
-            this.searchbtnbuyer.TabIndex = 4;
-            // 
-            // logoutbtnbuyer
-            // 
-            this.logoutbtnbuyer.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.logoutbtnbuyer.Image = global::EliteEstates.Properties.Resources.Signoutupdate;
-            this.logoutbtnbuyer.ImageSize = new System.Drawing.Size(64, 64);
-            this.logoutbtnbuyer.Location = new System.Drawing.Point(731, 3);
-            this.logoutbtnbuyer.Name = "logoutbtnbuyer";
-            this.logoutbtnbuyer.OnHoverImage = null;
-            this.logoutbtnbuyer.OnHoverImageOffset = new System.Drawing.Point(0, 0);
-            this.logoutbtnbuyer.Size = new System.Drawing.Size(38, 42);
-            this.logoutbtnbuyer.TabIndex = 1;
-            // 
             // buyergridview
             // 
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
-            this.buyergridview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            this.buyergridview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
             this.buyergridview.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.buyergridview.BackgroundColor = System.Drawing.Color.AliceBlue;
             this.buyergridview.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.buyergridview.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.buyergridview.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.buyergridview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.buyergridview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.buyergridview.ColumnHeadersHeight = 42;
             this.buyergridview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.IDcolumn,
@@ -191,30 +142,30 @@
             this.locationcolumn,
             this.SelleridColumn,
             this.sellernameColumn});
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.buyergridview.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.buyergridview.DefaultCellStyle = dataGridViewCellStyle8;
             this.buyergridview.EnableHeadersVisualStyles = false;
             this.buyergridview.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.buyergridview.Location = new System.Drawing.Point(131, -16);
             this.buyergridview.Name = "buyergridview";
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Cooper Black", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.buyergridview.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Cooper Black", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.buyergridview.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.buyergridview.RowHeadersVisible = false;
             this.buyergridview.RowHeadersWidth = 51;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Cooper Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buyergridview.RowsDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Cooper Black", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buyergridview.RowsDefaultCellStyle = dataGridViewCellStyle10;
             this.buyergridview.RowTemplate.Height = 24;
             this.buyergridview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.buyergridview.Size = new System.Drawing.Size(775, 309);
@@ -388,18 +339,6 @@
             this.panel1.Size = new System.Drawing.Size(783, 50);
             this.panel1.TabIndex = 16;
             // 
-            // gunaImageButton1
-            // 
-            this.gunaImageButton1.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaImageButton1.Image = global::EliteEstates.Properties.Resources.searchlogo;
-            this.gunaImageButton1.ImageSize = new System.Drawing.Size(64, 64);
-            this.gunaImageButton1.Location = new System.Drawing.Point(537, 3);
-            this.gunaImageButton1.Name = "gunaImageButton1";
-            this.gunaImageButton1.OnHoverImage = null;
-            this.gunaImageButton1.OnHoverImageOffset = new System.Drawing.Point(0, 0);
-            this.gunaImageButton1.Size = new System.Drawing.Size(44, 40);
-            this.gunaImageButton1.TabIndex = 4;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -410,18 +349,6 @@
             this.label1.Size = new System.Drawing.Size(78, 20);
             this.label1.TabIndex = 6;
             this.label1.Text = "Search :";
-            // 
-            // gunaImageButton2
-            // 
-            this.gunaImageButton2.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaImageButton2.Image = global::EliteEstates.Properties.Resources.Signoutupdate;
-            this.gunaImageButton2.ImageSize = new System.Drawing.Size(64, 64);
-            this.gunaImageButton2.Location = new System.Drawing.Point(731, 3);
-            this.gunaImageButton2.Name = "gunaImageButton2";
-            this.gunaImageButton2.OnHoverImage = null;
-            this.gunaImageButton2.OnHoverImageOffset = new System.Drawing.Point(0, 0);
-            this.gunaImageButton2.Size = new System.Drawing.Size(38, 42);
-            this.gunaImageButton2.TabIndex = 1;
             // 
             // gunaLineTextBox1
             // 
@@ -575,17 +502,30 @@
             this.bnamelbl.TabIndex = 3;
             this.bnamelbl.Text = "Buyer Name";
             // 
-            // buyerpicture
+            // searchbarlblb
             // 
-            this.buyerpicture.BaseColor = System.Drawing.Color.White;
-            this.buyerpicture.Image = global::EliteEstates.Properties.Resources._10426713;
-            this.buyerpicture.Location = new System.Drawing.Point(61, 24);
-            this.buyerpicture.Name = "buyerpicture";
-            this.buyerpicture.Size = new System.Drawing.Size(95, 74);
-            this.buyerpicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.buyerpicture.TabIndex = 0;
-            this.buyerpicture.TabStop = false;
-            this.buyerpicture.UseTransfarantBackground = false;
+            this.searchbarlblb.AutoSize = true;
+            this.searchbarlblb.Font = new System.Drawing.Font("Cooper Black", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchbarlblb.ForeColor = System.Drawing.Color.White;
+            this.searchbarlblb.Location = new System.Drawing.Point(152, 15);
+            this.searchbarlblb.Name = "searchbarlblb";
+            this.searchbarlblb.Size = new System.Drawing.Size(78, 20);
+            this.searchbarlblb.TabIndex = 6;
+            this.searchbarlblb.Text = "Search :";
+            // 
+            // buyersearchbartxt
+            // 
+            this.buyersearchbartxt.BackColor = System.Drawing.Color.LightGray;
+            this.buyersearchbartxt.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.buyersearchbartxt.FocusedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.buyersearchbartxt.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.buyersearchbartxt.LineColor = System.Drawing.Color.Gainsboro;
+            this.buyersearchbartxt.Location = new System.Drawing.Point(249, 5);
+            this.buyersearchbartxt.Name = "buyersearchbartxt";
+            this.buyersearchbartxt.PasswordChar = '\0';
+            this.buyersearchbartxt.SelectedText = "";
+            this.buyersearchbartxt.Size = new System.Drawing.Size(282, 30);
+            this.buyersearchbartxt.TabIndex = 4;
             // 
             // gunaButton1
             // 
@@ -656,11 +596,12 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Cooper Black", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(63, 60);
+            this.label3.Location = new System.Drawing.Point(61, 40);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(51, 35);
             this.label3.TabIndex = 5;
             this.label3.Text = "00";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -685,40 +626,16 @@
             this.panel4.Size = new System.Drawing.Size(783, 50);
             this.panel4.TabIndex = 20;
             // 
-            // gunaImageButton3
-            // 
-            this.gunaImageButton3.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaImageButton3.Image = global::EliteEstates.Properties.Resources.searchlogo;
-            this.gunaImageButton3.ImageSize = new System.Drawing.Size(64, 64);
-            this.gunaImageButton3.Location = new System.Drawing.Point(537, 3);
-            this.gunaImageButton3.Name = "gunaImageButton3";
-            this.gunaImageButton3.OnHoverImage = null;
-            this.gunaImageButton3.OnHoverImageOffset = new System.Drawing.Point(0, 0);
-            this.gunaImageButton3.Size = new System.Drawing.Size(44, 40);
-            this.gunaImageButton3.TabIndex = 4;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Cooper Black", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(152, 15);
+            this.label5.Location = new System.Drawing.Point(120, 11);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(78, 20);
             this.label5.TabIndex = 6;
             this.label5.Text = "Search :";
-            // 
-            // gunaImageButton4
-            // 
-            this.gunaImageButton4.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaImageButton4.Image = global::EliteEstates.Properties.Resources.Signoutupdate;
-            this.gunaImageButton4.ImageSize = new System.Drawing.Size(64, 64);
-            this.gunaImageButton4.Location = new System.Drawing.Point(731, 3);
-            this.gunaImageButton4.Name = "gunaImageButton4";
-            this.gunaImageButton4.OnHoverImage = null;
-            this.gunaImageButton4.OnHoverImageOffset = new System.Drawing.Point(0, 0);
-            this.gunaImageButton4.Size = new System.Drawing.Size(38, 42);
-            this.gunaImageButton4.TabIndex = 1;
             // 
             // gunaLineTextBox2
             // 
@@ -727,11 +644,11 @@
             this.gunaLineTextBox2.FocusedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaLineTextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaLineTextBox2.LineColor = System.Drawing.Color.Gainsboro;
-            this.gunaLineTextBox2.Location = new System.Drawing.Point(249, 5);
+            this.gunaLineTextBox2.Location = new System.Drawing.Point(204, 11);
             this.gunaLineTextBox2.Name = "gunaLineTextBox2";
             this.gunaLineTextBox2.PasswordChar = '\0';
             this.gunaLineTextBox2.SelectedText = "";
-            this.gunaLineTextBox2.Size = new System.Drawing.Size(282, 30);
+            this.gunaLineTextBox2.Size = new System.Drawing.Size(300, 30);
             this.gunaLineTextBox2.TabIndex = 4;
             // 
             // label6
@@ -753,85 +670,6 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(248, 571);
             this.panel5.TabIndex = 17;
-            // 
-            // Cashwithdrawadmin
-            // 
-            this.Cashwithdrawadmin.AnimationHoverSpeed = 0.07F;
-            this.Cashwithdrawadmin.AnimationSpeed = 0.03F;
-            this.Cashwithdrawadmin.BackColor = System.Drawing.Color.Transparent;
-            this.Cashwithdrawadmin.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.Cashwithdrawadmin.BorderColor = System.Drawing.Color.Black;
-            this.Cashwithdrawadmin.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.Cashwithdrawadmin.FocusedColor = System.Drawing.Color.Empty;
-            this.Cashwithdrawadmin.Font = new System.Drawing.Font("Cooper Black", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Cashwithdrawadmin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.Cashwithdrawadmin.Image = null;
-            this.Cashwithdrawadmin.ImageSize = new System.Drawing.Size(20, 20);
-            this.Cashwithdrawadmin.Location = new System.Drawing.Point(279, 360);
-            this.Cashwithdrawadmin.Name = "Cashwithdrawadmin";
-            this.Cashwithdrawadmin.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.Cashwithdrawadmin.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.Cashwithdrawadmin.OnHoverForeColor = System.Drawing.Color.White;
-            this.Cashwithdrawadmin.OnHoverImage = null;
-            this.Cashwithdrawadmin.OnPressedColor = System.Drawing.Color.Black;
-            this.Cashwithdrawadmin.Radius = 15;
-            this.Cashwithdrawadmin.Size = new System.Drawing.Size(261, 169);
-            this.Cashwithdrawadmin.TabIndex = 6;
-            this.Cashwithdrawadmin.Text = "Cash Withdraw";
-            this.Cashwithdrawadmin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.Cashwithdrawadmin.Click += new System.EventHandler(this.gunaButton3_Click);
-            // 
-            // seecomplainbtnadmin
-            // 
-            this.seecomplainbtnadmin.AnimationHoverSpeed = 0.07F;
-            this.seecomplainbtnadmin.AnimationSpeed = 0.03F;
-            this.seecomplainbtnadmin.BackColor = System.Drawing.Color.Transparent;
-            this.seecomplainbtnadmin.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.seecomplainbtnadmin.BorderColor = System.Drawing.Color.Black;
-            this.seecomplainbtnadmin.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.seecomplainbtnadmin.FocusedColor = System.Drawing.Color.Empty;
-            this.seecomplainbtnadmin.Font = new System.Drawing.Font("Cooper Black", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.seecomplainbtnadmin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.seecomplainbtnadmin.Image = null;
-            this.seecomplainbtnadmin.ImageSize = new System.Drawing.Size(20, 20);
-            this.seecomplainbtnadmin.Location = new System.Drawing.Point(566, 200);
-            this.seecomplainbtnadmin.Name = "seecomplainbtnadmin";
-            this.seecomplainbtnadmin.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.seecomplainbtnadmin.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.seecomplainbtnadmin.OnHoverForeColor = System.Drawing.Color.White;
-            this.seecomplainbtnadmin.OnHoverImage = null;
-            this.seecomplainbtnadmin.OnPressedColor = System.Drawing.Color.Black;
-            this.seecomplainbtnadmin.Radius = 15;
-            this.seecomplainbtnadmin.Size = new System.Drawing.Size(244, 148);
-            this.seecomplainbtnadmin.TabIndex = 5;
-            this.seecomplainbtnadmin.Text = "See complains";
-            this.seecomplainbtnadmin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // transectionbtnadmin
-            // 
-            this.transectionbtnadmin.AnimationHoverSpeed = 0.07F;
-            this.transectionbtnadmin.AnimationSpeed = 0.03F;
-            this.transectionbtnadmin.BackColor = System.Drawing.Color.Transparent;
-            this.transectionbtnadmin.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.transectionbtnadmin.BorderColor = System.Drawing.Color.Black;
-            this.transectionbtnadmin.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.transectionbtnadmin.FocusedColor = System.Drawing.Color.Empty;
-            this.transectionbtnadmin.Font = new System.Drawing.Font("Cooper Black", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.transectionbtnadmin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.transectionbtnadmin.Image = null;
-            this.transectionbtnadmin.ImageSize = new System.Drawing.Size(20, 20);
-            this.transectionbtnadmin.Location = new System.Drawing.Point(279, 200);
-            this.transectionbtnadmin.Name = "transectionbtnadmin";
-            this.transectionbtnadmin.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.transectionbtnadmin.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.transectionbtnadmin.OnHoverForeColor = System.Drawing.Color.White;
-            this.transectionbtnadmin.OnHoverImage = null;
-            this.transectionbtnadmin.OnPressedColor = System.Drawing.Color.Black;
-            this.transectionbtnadmin.Radius = 15;
-            this.transectionbtnadmin.Size = new System.Drawing.Size(261, 148);
-            this.transectionbtnadmin.TabIndex = 4;
-            this.transectionbtnadmin.Text = "Transections";
-            this.transectionbtnadmin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // gunaButton6
             // 
@@ -870,6 +708,137 @@
             this.adminlbl.TabIndex = 3;
             this.adminlbl.Text = "Buyer Name";
             // 
+            // Cashwithdrawadmin
+            // 
+            this.Cashwithdrawadmin.AnimationHoverSpeed = 0.07F;
+            this.Cashwithdrawadmin.AnimationSpeed = 0.03F;
+            this.Cashwithdrawadmin.BackColor = System.Drawing.Color.Transparent;
+            this.Cashwithdrawadmin.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.Cashwithdrawadmin.BorderColor = System.Drawing.Color.Black;
+            this.Cashwithdrawadmin.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.Cashwithdrawadmin.FocusedColor = System.Drawing.Color.Empty;
+            this.Cashwithdrawadmin.Font = new System.Drawing.Font("Cooper Black", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cashwithdrawadmin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.Cashwithdrawadmin.Image = null;
+            this.Cashwithdrawadmin.ImageSize = new System.Drawing.Size(20, 20);
+            this.Cashwithdrawadmin.Location = new System.Drawing.Point(279, 366);
+            this.Cashwithdrawadmin.Name = "Cashwithdrawadmin";
+            this.Cashwithdrawadmin.OnHoverBaseColor = System.Drawing.Color.Red;
+            this.Cashwithdrawadmin.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.Cashwithdrawadmin.OnHoverForeColor = System.Drawing.Color.White;
+            this.Cashwithdrawadmin.OnHoverImage = null;
+            this.Cashwithdrawadmin.OnPressedColor = System.Drawing.Color.Black;
+            this.Cashwithdrawadmin.Radius = 15;
+            this.Cashwithdrawadmin.Size = new System.Drawing.Size(309, 166);
+            this.Cashwithdrawadmin.TabIndex = 6;
+            this.Cashwithdrawadmin.Text = "Cash Withdraw";
+            this.Cashwithdrawadmin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Cashwithdrawadmin.Click += new System.EventHandler(this.gunaButton3_Click);
+            // 
+            // seecomplainbtnadmin
+            // 
+            this.seecomplainbtnadmin.AnimationHoverSpeed = 0.07F;
+            this.seecomplainbtnadmin.AnimationSpeed = 0.03F;
+            this.seecomplainbtnadmin.BackColor = System.Drawing.Color.Transparent;
+            this.seecomplainbtnadmin.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.seecomplainbtnadmin.BorderColor = System.Drawing.Color.Black;
+            this.seecomplainbtnadmin.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.seecomplainbtnadmin.FocusedColor = System.Drawing.Color.Empty;
+            this.seecomplainbtnadmin.Font = new System.Drawing.Font("Cooper Black", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.seecomplainbtnadmin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.seecomplainbtnadmin.Image = null;
+            this.seecomplainbtnadmin.ImageSize = new System.Drawing.Size(20, 20);
+            this.seecomplainbtnadmin.Location = new System.Drawing.Point(279, 191);
+            this.seecomplainbtnadmin.Name = "seecomplainbtnadmin";
+            this.seecomplainbtnadmin.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.seecomplainbtnadmin.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.seecomplainbtnadmin.OnHoverForeColor = System.Drawing.Color.White;
+            this.seecomplainbtnadmin.OnHoverImage = null;
+            this.seecomplainbtnadmin.OnPressedColor = System.Drawing.Color.Black;
+            this.seecomplainbtnadmin.Radius = 15;
+            this.seecomplainbtnadmin.Size = new System.Drawing.Size(309, 169);
+            this.seecomplainbtnadmin.TabIndex = 5;
+            this.seecomplainbtnadmin.Text = "See complains";
+            this.seecomplainbtnadmin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.seecomplainbtnadmin.Click += new System.EventHandler(this.seecomplainbtnadmin_Click);
+            // 
+            // transectionbtnadmin
+            // 
+            this.transectionbtnadmin.AnimationHoverSpeed = 0.07F;
+            this.transectionbtnadmin.AnimationSpeed = 0.03F;
+            this.transectionbtnadmin.BackColor = System.Drawing.Color.Transparent;
+            this.transectionbtnadmin.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.transectionbtnadmin.BorderColor = System.Drawing.Color.Black;
+            this.transectionbtnadmin.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.transectionbtnadmin.FocusedColor = System.Drawing.Color.Empty;
+            this.transectionbtnadmin.Font = new System.Drawing.Font("Cooper Black", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.transectionbtnadmin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.transectionbtnadmin.Image = null;
+            this.transectionbtnadmin.ImageSize = new System.Drawing.Size(20, 20);
+            this.transectionbtnadmin.Location = new System.Drawing.Point(636, 366);
+            this.transectionbtnadmin.Name = "transectionbtnadmin";
+            this.transectionbtnadmin.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.transectionbtnadmin.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.transectionbtnadmin.OnHoverForeColor = System.Drawing.Color.White;
+            this.transectionbtnadmin.OnHoverImage = null;
+            this.transectionbtnadmin.OnPressedColor = System.Drawing.Color.Black;
+            this.transectionbtnadmin.Radius = 15;
+            this.transectionbtnadmin.Size = new System.Drawing.Size(310, 166);
+            this.transectionbtnadmin.TabIndex = 4;
+            this.transectionbtnadmin.Text = "Transections";
+            this.transectionbtnadmin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.transectionbtnadmin.Click += new System.EventHandler(this.transectionbtnadmin_Click);
+            // 
+            // usercontrolbrnadmin
+            // 
+            this.usercontrolbrnadmin.AnimationHoverSpeed = 0.07F;
+            this.usercontrolbrnadmin.AnimationSpeed = 0.03F;
+            this.usercontrolbrnadmin.BackColor = System.Drawing.Color.Transparent;
+            this.usercontrolbrnadmin.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.usercontrolbrnadmin.BorderColor = System.Drawing.Color.Black;
+            this.usercontrolbrnadmin.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.usercontrolbrnadmin.FocusedColor = System.Drawing.Color.Empty;
+            this.usercontrolbrnadmin.Font = new System.Drawing.Font("Cooper Black", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usercontrolbrnadmin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.usercontrolbrnadmin.Image = null;
+            this.usercontrolbrnadmin.ImageSize = new System.Drawing.Size(20, 20);
+            this.usercontrolbrnadmin.Location = new System.Drawing.Point(636, 191);
+            this.usercontrolbrnadmin.Name = "usercontrolbrnadmin";
+            this.usercontrolbrnadmin.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.usercontrolbrnadmin.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.usercontrolbrnadmin.OnHoverForeColor = System.Drawing.Color.White;
+            this.usercontrolbrnadmin.OnHoverImage = null;
+            this.usercontrolbrnadmin.OnPressedColor = System.Drawing.Color.Black;
+            this.usercontrolbrnadmin.Radius = 15;
+            this.usercontrolbrnadmin.Size = new System.Drawing.Size(310, 169);
+            this.usercontrolbrnadmin.TabIndex = 23;
+            this.usercontrolbrnadmin.Text = "User Coltrol";
+            this.usercontrolbrnadmin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // gunaImageButton3
+            // 
+            this.gunaImageButton3.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaImageButton3.Image = global::EliteEstates.Properties.Resources.searchlogo;
+            this.gunaImageButton3.ImageSize = new System.Drawing.Size(64, 64);
+            this.gunaImageButton3.Location = new System.Drawing.Point(537, 3);
+            this.gunaImageButton3.Name = "gunaImageButton3";
+            this.gunaImageButton3.OnHoverImage = null;
+            this.gunaImageButton3.OnHoverImageOffset = new System.Drawing.Point(0, 0);
+            this.gunaImageButton3.Size = new System.Drawing.Size(44, 40);
+            this.gunaImageButton3.TabIndex = 4;
+            // 
+            // gunaImageButton4
+            // 
+            this.gunaImageButton4.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaImageButton4.Image = global::EliteEstates.Properties.Resources.Signoutupdate;
+            this.gunaImageButton4.ImageSize = new System.Drawing.Size(64, 64);
+            this.gunaImageButton4.Location = new System.Drawing.Point(731, 3);
+            this.gunaImageButton4.Name = "gunaImageButton4";
+            this.gunaImageButton4.OnHoverImage = null;
+            this.gunaImageButton4.OnHoverImageOffset = new System.Drawing.Point(0, 0);
+            this.gunaImageButton4.Size = new System.Drawing.Size(38, 42);
+            this.gunaImageButton4.TabIndex = 1;
+            // 
             // gunaCirclePictureBox1
             // 
             this.gunaCirclePictureBox1.BaseColor = System.Drawing.Color.White;
@@ -882,31 +851,65 @@
             this.gunaCirclePictureBox1.TabStop = false;
             this.gunaCirclePictureBox1.UseTransfarantBackground = false;
             // 
-            // usercontrolbrnadmin
+            // gunaImageButton1
             // 
-            this.usercontrolbrnadmin.AnimationHoverSpeed = 0.07F;
-            this.usercontrolbrnadmin.AnimationSpeed = 0.03F;
-            this.usercontrolbrnadmin.BackColor = System.Drawing.Color.Transparent;
-            this.usercontrolbrnadmin.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.usercontrolbrnadmin.BorderColor = System.Drawing.Color.Black;
-            this.usercontrolbrnadmin.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.usercontrolbrnadmin.FocusedColor = System.Drawing.Color.Empty;
-            this.usercontrolbrnadmin.Font = new System.Drawing.Font("Cooper Black", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usercontrolbrnadmin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.usercontrolbrnadmin.Image = null;
-            this.usercontrolbrnadmin.ImageSize = new System.Drawing.Size(20, 20);
-            this.usercontrolbrnadmin.Location = new System.Drawing.Point(566, 360);
-            this.usercontrolbrnadmin.Name = "usercontrolbrnadmin";
-            this.usercontrolbrnadmin.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.usercontrolbrnadmin.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.usercontrolbrnadmin.OnHoverForeColor = System.Drawing.Color.White;
-            this.usercontrolbrnadmin.OnHoverImage = null;
-            this.usercontrolbrnadmin.OnPressedColor = System.Drawing.Color.Black;
-            this.usercontrolbrnadmin.Radius = 15;
-            this.usercontrolbrnadmin.Size = new System.Drawing.Size(251, 169);
-            this.usercontrolbrnadmin.TabIndex = 23;
-            this.usercontrolbrnadmin.Text = "User Coltrol";
-            this.usercontrolbrnadmin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaImageButton1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaImageButton1.Image = global::EliteEstates.Properties.Resources.searchlogo;
+            this.gunaImageButton1.ImageSize = new System.Drawing.Size(64, 64);
+            this.gunaImageButton1.Location = new System.Drawing.Point(537, 3);
+            this.gunaImageButton1.Name = "gunaImageButton1";
+            this.gunaImageButton1.OnHoverImage = null;
+            this.gunaImageButton1.OnHoverImageOffset = new System.Drawing.Point(0, 0);
+            this.gunaImageButton1.Size = new System.Drawing.Size(44, 40);
+            this.gunaImageButton1.TabIndex = 4;
+            // 
+            // gunaImageButton2
+            // 
+            this.gunaImageButton2.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaImageButton2.Image = global::EliteEstates.Properties.Resources.Signoutupdate;
+            this.gunaImageButton2.ImageSize = new System.Drawing.Size(64, 64);
+            this.gunaImageButton2.Location = new System.Drawing.Point(731, 3);
+            this.gunaImageButton2.Name = "gunaImageButton2";
+            this.gunaImageButton2.OnHoverImage = null;
+            this.gunaImageButton2.OnHoverImageOffset = new System.Drawing.Point(0, 0);
+            this.gunaImageButton2.Size = new System.Drawing.Size(38, 42);
+            this.gunaImageButton2.TabIndex = 1;
+            // 
+            // buyerpicture
+            // 
+            this.buyerpicture.BaseColor = System.Drawing.Color.White;
+            this.buyerpicture.Image = global::EliteEstates.Properties.Resources._10426713;
+            this.buyerpicture.Location = new System.Drawing.Point(61, 24);
+            this.buyerpicture.Name = "buyerpicture";
+            this.buyerpicture.Size = new System.Drawing.Size(95, 74);
+            this.buyerpicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.buyerpicture.TabIndex = 0;
+            this.buyerpicture.TabStop = false;
+            this.buyerpicture.UseTransfarantBackground = false;
+            // 
+            // searchbtnbuyer
+            // 
+            this.searchbtnbuyer.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.searchbtnbuyer.Image = global::EliteEstates.Properties.Resources.searchlogo;
+            this.searchbtnbuyer.ImageSize = new System.Drawing.Size(64, 64);
+            this.searchbtnbuyer.Location = new System.Drawing.Point(537, 3);
+            this.searchbtnbuyer.Name = "searchbtnbuyer";
+            this.searchbtnbuyer.OnHoverImage = null;
+            this.searchbtnbuyer.OnHoverImageOffset = new System.Drawing.Point(0, 0);
+            this.searchbtnbuyer.Size = new System.Drawing.Size(44, 40);
+            this.searchbtnbuyer.TabIndex = 4;
+            // 
+            // logoutbtnbuyer
+            // 
+            this.logoutbtnbuyer.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.logoutbtnbuyer.Image = global::EliteEstates.Properties.Resources.Signoutupdate;
+            this.logoutbtnbuyer.ImageSize = new System.Drawing.Size(64, 64);
+            this.logoutbtnbuyer.Location = new System.Drawing.Point(731, 3);
+            this.logoutbtnbuyer.Name = "logoutbtnbuyer";
+            this.logoutbtnbuyer.OnHoverImage = null;
+            this.logoutbtnbuyer.OnHoverImageOffset = new System.Drawing.Point(0, 0);
+            this.logoutbtnbuyer.Size = new System.Drawing.Size(38, 42);
+            this.logoutbtnbuyer.TabIndex = 1;
             // 
             // AdminDashboard
             // 
@@ -935,7 +938,6 @@
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.buyerpicture)).EndInit();
             this.gunaElipsePanel1.ResumeLayout(false);
             this.gunaElipsePanel1.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -943,6 +945,7 @@
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buyerpicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
