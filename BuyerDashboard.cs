@@ -14,12 +14,14 @@ namespace EliteEstates
     public partial class BuyerDashboard : Form
     {
         private int buyerId;
-        public BuyerDashboard(int buyerId)
+        private string buyerName;
+        public BuyerDashboard(int buyerId, string buyerName)
         {
             InitializeComponent();
             this.buyerId = buyerId;
             DisplayAllProducts();
             Displaybalance();
+            this.buyerName = buyerName;
         }
         private void DisplayAllProducts()
         {
@@ -50,7 +52,7 @@ namespace EliteEstates
 
         private void sendcomplaintbtnbuyer_Click(object sender, EventArgs e)
         {
-            SendComplaint send = new SendComplaint(buyerId);
+            SendComplaint send = new SendComplaint(buyerId,buyerName);
             send.Show();
             this.Hide();
         }
@@ -64,7 +66,7 @@ namespace EliteEstates
 
         private void Addcash_Click(object sender, EventArgs e)
         {
-            Inputcashammount insert=new Inputcashammount(buyerId);
+            Inputcashammount insert=new Inputcashammount(buyerId, buyerName);
             insert.Show();  
             this.Hide();
         }
@@ -140,16 +142,20 @@ namespace EliteEstates
 
         private void editbtnbuyer_Click(object sender, EventArgs e)
         {
-            Editinfo edit=new Editinfo(buyerId);
+            Editinfo edit=new Editinfo(buyerId, buyerName);
             edit.Show();
             this.Hide();
         }
 
         private void buybtn_Click(object sender, EventArgs e)
         {
-            Buyitem buyitem = new Buyitem(buyerId);
+            Buyitem buyitem = new Buyitem(buyerId, buyerName);
             buyitem.Show();
             this.Hide();
+        }
+
+        private void deletebtn_Click(object sender, EventArgs e)
+        {
         }
     }
     }

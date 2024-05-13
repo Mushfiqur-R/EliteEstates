@@ -110,6 +110,7 @@
             this.Controls.Add(this.selectammountdeposit);
             this.Controls.Add(this.gunaLabel1);
             this.Name = "Inputcashammount";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inputcashammount";
             this.ResumeLayout(false);
             this.PerformLayout();

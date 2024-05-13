@@ -13,10 +13,12 @@ namespace EliteEstates
 {
     public partial class TransectionHistory : Form
     {
-        public TransectionHistory()
+        private int adminId;
+        public TransectionHistory(int adminId)
         {
             InitializeComponent();
             DisplayTransection();
+            this.adminId = adminId;
         }
         private void DisplayTransection()
         {
@@ -26,7 +28,7 @@ namespace EliteEstates
                 {
                     connection.Open();
 
-                    string query = "SELECT [BuyerID]\r\n      ,[SellerID]\r\n      ,[ProductPrice]\r\n      ,[Transectionnumber]\r\n      ,[TransectionID]\r\n      ,[ProductID]\r\n  FROM [dbo].[TransectionHistory]";
+                    string query = "SELECT [BuyerID], [SellerID], [ProductPrice], [Transectionnumber], [TransectionID], [ProductID], [Date] FROM [dbo].[TransectionHistory]";
 
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
@@ -46,7 +48,7 @@ namespace EliteEstates
 
         private void backbtninputammount_Click(object sender, EventArgs e)
         {
-            AdminDashboard back=new AdminDashboard();
+            AdminDashboard back=new AdminDashboard(adminId);
             back.Show();    
             this.Close();
         }

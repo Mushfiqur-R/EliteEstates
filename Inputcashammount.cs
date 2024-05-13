@@ -16,10 +16,12 @@ namespace EliteEstates
     {
 
         private int buyerId;
-        public Inputcashammount(int buyerId)
+        private string buyerName;
+        public Inputcashammount(int buyerId, string buyerName)
         {
             InitializeComponent();
             this.buyerId = buyerId;
+            this.buyerName = buyerName;
         }
 
         private void gunaButton1_Click(object sender, EventArgs e)//inter ammount confirm button
@@ -91,7 +93,7 @@ namespace EliteEstates
 
         private void backbtninputammount_Click(object sender, EventArgs e)
         {
-            BuyerDashboard back=new BuyerDashboard(buyerId);
+            BuyerDashboard back=new BuyerDashboard(buyerId,buyerName);
             back.Show();
             this.Hide();
         }

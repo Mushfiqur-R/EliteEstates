@@ -13,10 +13,12 @@ namespace EliteEstates
 {
     public partial class SeeComplain : Form
     {
-        public SeeComplain()
+        private int adminId;
+        public SeeComplain(int adminId)
         {
             InitializeComponent();
             DisplayComplain();
+            this.adminId = adminId;
         }
         private void DisplayComplain()
         {
@@ -46,7 +48,7 @@ namespace EliteEstates
 
         private void backbtncomplain_Click(object sender, EventArgs e)
         {
-            AdminDashboard back=new AdminDashboard();
+            AdminDashboard back=new AdminDashboard(adminId);
             back.Show();
             this.Hide();
         }

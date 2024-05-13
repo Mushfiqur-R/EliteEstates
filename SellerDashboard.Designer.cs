@@ -266,6 +266,7 @@
             this.Currentbalance.Size = new System.Drawing.Size(51, 35);
             this.Currentbalance.TabIndex = 5;
             this.Currentbalance.Text = "00";
+            this.Currentbalance.Click += new System.EventHandler(this.Currentbalance_Click);
             // 
             // currentbalancesellerlbl
             // 
@@ -493,6 +494,7 @@
             this.searchbtn.OnHoverImageOffset = new System.Drawing.Point(0, 0);
             this.searchbtn.Size = new System.Drawing.Size(44, 40);
             this.searchbtn.TabIndex = 4;
+            this.searchbtn.Click += new System.EventHandler(this.searchbtn_Click);
             // 
             // logoutbtn
             // 

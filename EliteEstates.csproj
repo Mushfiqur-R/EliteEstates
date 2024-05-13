@@ -147,6 +147,12 @@
     <Compile Include="SellerSignin.Designer.cs">
       <DependentUpon>SellerSignin.cs</DependentUpon>
     </Compile>
+    <Compile Include="ShowSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowSearch.Designer.cs">
+      <DependentUpon>ShowSearch.cs</DependentUpon>
+    </Compile>
     <Compile Include="TransectionHistory.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -199,6 +205,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SellerSignin.resx">
       <DependentUpon>SellerSignin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowSearch.resx">
+      <DependentUpon>ShowSearch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TransectionHistory.resx">
       <DependentUpon>TransectionHistory.cs</DependentUpon>

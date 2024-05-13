@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -23,6 +24,7 @@ namespace EliteEstates
             this.sellerUsername=sellerUsername;
             snamelbl.Text = sellerUsername; 
             DisplaySellerProducts();//display method call for show data in gridview
+            DisplaySellerBalance();
         }
 
         //show data in gridview
@@ -203,9 +205,62 @@ namespace EliteEstates
 
         private void sendcomplaintbtn_Click(object sender, EventArgs e)
         {
-            SendComplaint send = new SendComplaint(sellerId,isSeller:true);
+            SendComplaint send = new SendComplaint(sellerId,sellerUsername);
             send.Show();
             this.Hide();
+        }
+
+        private void Currentbalance_Click(object sender, EventArgs e)
+        {
+
+        }
+        public void DisplaySellerBalance()
+        {
+            string connectionString = "Data Source=USER\\SQLEXPRESS;Initial Catalog=EliteEstates;Integrated Security=True;";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    connection.Open();
+
+                    string query = "SELECT SellerAmount FROM SellerBalance WHERE SellerId = @SellerId";
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@SellerId", sellerId); // Assuming you have the sellerId variable defined elsewhere
+                        object result = command.ExecuteScalar();
+
+                        if (result != null && result != DBNull.Value) // Check for null or DBNull.Value
+                        {
+                            // Convert result to decimal and set label text to balance value
+                            decimal balance = Convert.ToDecimal(result);
+                            Currentbalance.Text = balance.ToString(); // Display only the balance value
+                        }
+                        else
+                        {
+                            Currentbalance.Text = "0.00"; // Default to 0 if balance is not found
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error fetching seller balance: " + ex.Message);
+                }
+            }
+        }
+
+        private void searchbtn_Click(object sender, EventArgs e)
+        {
+            string productName = sellersearchbartxt.Text;
+
+            if (!string.IsNullOrEmpty(productName))
+            {
+                ShowSearch showSearchForm = new ShowSearch(productName);
+                showSearchForm.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Please enter a product name to search.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

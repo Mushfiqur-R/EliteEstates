@@ -16,11 +16,13 @@ namespace EliteEstates
         private int buyerId;
         private decimal buyerBalance;
         private decimal adminCommission = 0.05m;
-        public Buyitem(int buyerId)
+        private string buyerName;
+        public Buyitem(int buyerId, string buyerName)
         {
             InitializeComponent();
             this.buyerId = buyerId;
             LoadBuyerBalance();
+            this.buyerName = buyerName;
         }
         private void LoadBuyerBalance()
         {
@@ -120,8 +122,9 @@ namespace EliteEstates
                                 return;
                             }
                         }
-                        string insertTransactionQuery = @"INSERT INTO TransectionHistory (BuyerID, SellerID, ProductPrice, TransectionNumber, ProductID)
-                        VALUES (@BuyerId, @SellerId, @ProductPrice, @TransactionNumber, @ProductId)";
+                        string insertTransactionQuery = @" INSERT INTO TransectionHistory (BuyerID, SellerID, ProductPrice, TransectionNumber, ProductID, [Date])
+                         VALUES (@BuyerId, @SellerId, @ProductPrice, @TransactionNumber, @ProductId, @TransactionDate)";
+
                         using (SqlCommand insertTransactionCommand = new SqlCommand(insertTransactionQuery, connection, transaction))
                         {
                             insertTransactionCommand.Parameters.AddWithValue("@BuyerId", buyerId);
@@ -129,16 +132,22 @@ namespace EliteEstates
                             insertTransactionCommand.Parameters.AddWithValue("@ProductPrice", productPrice);
                             insertTransactionCommand.Parameters.AddWithValue("@TransactionNumber", GenerateRandomTransactionNumber());
                             insertTransactionCommand.Parameters.AddWithValue("@ProductId", productId);
+                            insertTransactionCommand.Parameters.AddWithValue("@TransactionDate", DateTime.Now); // Assuming you want to use the current date and time
+
+                            // Execute the insert command
                             insertTransactionCommand.ExecuteNonQuery();
+
+                            // Commit the transaction
+                            transaction.Commit();
+
+                            // Show success message
+                            MessageBox.Show("Purchase successful! Product deleted and transaction recorded.");
                         }
-                        transaction.Commit();
-                        MessageBox.Show("Purchase successful! Product deleted and transaction recorded.");
-                    
-                
 
 
-                      //  transaction.Commit();
-                      // MessageBox.Show("Purchase successful!P.");
+
+                        //  transaction.Commit();
+                        // MessageBox.Show("Purchase successful!P.");
                     }
 
                     //transaction.Commit();
@@ -224,7 +233,7 @@ namespace EliteEstates
 
         private void backbtneditinfo_Click(object sender, EventArgs e)
         {
-            BuyerDashboard back=new BuyerDashboard(buyerId);
+            BuyerDashboard back=new BuyerDashboard(buyerId, buyerName);
             back.Show();
             this.Hide();
         }

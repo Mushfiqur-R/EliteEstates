@@ -230,6 +230,7 @@
             this.Controls.Add(this.setnametxt);
             this.Controls.Add(this.setnamelbl);
             this.Name = "Add_Product";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add_Product";
             this.ResumeLayout(false);
             this.PerformLayout();

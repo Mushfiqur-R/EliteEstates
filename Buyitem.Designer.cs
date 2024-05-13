@@ -110,6 +110,7 @@
             this.Controls.Add(this.selectitemforbuy);
             this.Controls.Add(this.gunaLabel1);
             this.Name = "Buyitem";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Buyitem";
             this.ResumeLayout(false);
             this.PerformLayout();

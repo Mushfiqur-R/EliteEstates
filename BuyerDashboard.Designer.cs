@@ -92,6 +92,7 @@
             this.deletebtn.TabIndex = 11;
             this.deletebtn.Text = "Delete";
             this.deletebtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.deletebtn.Click += new System.EventHandler(this.deletebtn_Click);
             // 
             // buybtn
             // 

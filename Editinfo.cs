@@ -14,16 +14,18 @@ namespace EliteEstates
     public partial class Editinfo : Form
     {
         private int buyerId;
-        public Editinfo(int buyerId)
+        private string buyerName;
+        public Editinfo(int buyerId,string buyerName)
         {
             InitializeComponent();
             this.buyerId = buyerId;
              DisplayCurrentUserInfo();
+            this.buyerName = buyerName;
         }
 
         private void backbtneditinfo_Click(object sender, EventArgs e)
         {
-            BuyerDashboard back = new BuyerDashboard(buyerId);
+            BuyerDashboard back = new BuyerDashboard(buyerId, buyerName);
             back.Show();
             this.Hide();
         }

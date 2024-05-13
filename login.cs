@@ -70,7 +70,7 @@ namespace EliteEstates
                         // Buyer login
                         int buyerId = Convert.ToInt32(buyerTable.Rows[0]["ID"]);
                         string buyerUsername = buyerTable.Rows[0]["username"].ToString();
-                        BuyerDashboard buyerDashboard = new BuyerDashboard(buyerId);
+                        BuyerDashboard buyerDashboard = new BuyerDashboard(buyerId,buyerUsername);
                         buyerDashboard.Show();
                         this.Hide();
                     }
@@ -95,7 +95,7 @@ namespace EliteEstates
                         // Admin login
                         int adminId = Convert.ToInt32(adminTable.Rows[0]["ID"]);
                         string adminUsername = adminTable.Rows[0]["username"].ToString();
-                        AdminDashboard adminDashboard = new AdminDashboard();
+                        AdminDashboard adminDashboard = new AdminDashboard(adminId);
                         adminDashboard.Show();
                         this.Hide();
                     }
