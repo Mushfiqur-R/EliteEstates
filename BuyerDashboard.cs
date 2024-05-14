@@ -157,6 +157,21 @@ namespace EliteEstates
         private void deletebtn_Click(object sender, EventArgs e)
         {
         }
+
+        private void searchbtnbuyer_Click(object sender, EventArgs e)
+        {
+            string productName = buyersearchbartxt.Text;
+
+            if (!string.IsNullOrEmpty(productName))
+            {
+                Showsearchbuyer showSearchForm = new Showsearchbuyer(productName);
+                showSearchForm.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Please enter a product name to search.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
     }
     

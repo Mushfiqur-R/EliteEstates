@@ -179,6 +179,7 @@
             this.searchbtnbuyer.OnHoverImageOffset = new System.Drawing.Point(0, 0);
             this.searchbtnbuyer.Size = new System.Drawing.Size(44, 40);
             this.searchbtnbuyer.TabIndex = 4;
+            this.searchbtnbuyer.Click += new System.EventHandler(this.searchbtnbuyer_Click);
             // 
             // searchbarlblb
             // 

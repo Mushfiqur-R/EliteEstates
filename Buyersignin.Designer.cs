@@ -46,9 +46,9 @@
             this.label2.ForeColor = System.Drawing.Color.Navy;
             this.label2.Location = new System.Drawing.Point(164, 27);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(115, 32);
+            this.label2.Size = new System.Drawing.Size(126, 32);
             this.label2.TabIndex = 24;
-            this.label2.Text = "Sign In";
+            this.label2.Text = "Sign UP";
             // 
             // backbtnbuyer
             // 

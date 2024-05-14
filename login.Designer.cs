@@ -153,9 +153,9 @@
             this.signinlink.ForeColor = System.Drawing.Color.Red;
             this.signinlink.Location = new System.Drawing.Point(663, 418);
             this.signinlink.Name = "signinlink";
-            this.signinlink.Size = new System.Drawing.Size(66, 17);
+            this.signinlink.Size = new System.Drawing.Size(72, 17);
             this.signinlink.TabIndex = 6;
-            this.signinlink.Text = " Sign In";
+            this.signinlink.Text = " Sign Up";
             this.signinlink.Click += new System.EventHandler(this.signinlink_Click);
             // 
             // gunaLabel2
